@@ -1,0 +1,22 @@
+site_name: KronoDocs
+
+repo_name: Inflectra
+repo_url: https://www.inflectra.com
+site_url: https://kronodoc.inflectra.com/
+
+theme: 
+  name: mkdocs
+  custom_dir: inflectra_mkdocs
+nav:
+  - Quick Start Guide:
+    - Getting Started: Quick_Start_Guide\Getting Started.md
+    - Using the Help Desk Ticketing System: Quick_Start_Guide\Using the Help Desk Ticketing System.md
+    - Configuring and Customizing: Quick_Start_Guide\Configuring and Customizing.md
+    - Appendix A-Sample Users: Quick_Start_Guide\Appendix A- Sample Users.md
+  - Integrations: 
+    - Email:
+      - Installing: Email_Integration_Guide\Installing the Email Integration Service.md
+      - Configuring: Email_Integration_Guide\Configuring the Email Integration Service.md
+      - Using: Email_Integration_Guide\Using the Email Integration Service with KronoDesk.md
+    - Migration: 
+      - Importing from Excel: Migration_and_Integration_Guide\Importing from Microsoft Excel.md
