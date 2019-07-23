@@ -124,31 +124,26 @@ artifact the identification number refers to, KronoDesk uses a system of
 two-letter prefixes which help identify the type of artifact being
 displayed. The current prefixes used by the system are:
 
-**Artifact**        **Prefix**   **Artifact**             **Prefix**
-Ticket              TK           Knowledge Base Article   KB
-Ticket Status       TS           User                     US
-Ticket Type         TT           Forum                    FR
-Ticket Priority     TP           Thread                   TH
-Ticket Resolution   TR           Message                  MG
-Product             PR                                    
+| **Artifact**      |  **Prefix** |  **Artifact**           |  **Prefix** |
+| ------------ | ----------- | ----------- | --------- |
+| Ticket            |  TK         |  Knowledge Base Article |  KB |
+| Ticket Status     |  TS         |  User                   |  US |
+| Ticket Type       |  TT         |  Forum                  |  FR |
+| Ticket Priority   |  TP         |  Thread                 |  TH |
+| Ticket Resolution |  TR         |  Message                |  MG |
+| Product           |  PR         |                         |   |
 
 In addition, certain artifacts in the system are displayed with an icon
 that helps distinguish them from each other, and provides additional
 context on the state of the artifact:
 
-**Icon**                                                                                            **Artifact Description**
-![](img/Functionality_Overview_4.png)
-                             Knowledge Base Article
-![](img/Functionality_Overview_5.png)
-                     Forum Category
-![](img/Functionality_Overview_6.png)
-       Forum
-![](img/Functionality_Overview_7.png)
-      Thread
-![](img/Functionality_Overview_8.png)
-       Help Desk Ticket
-![](img/Functionality_Overview_9.png)
-                    SpiraTeam® Incident
-![](img/Functionality_Overview_10.png){width="7.291666666666667e-2in" 
-   Artifact has an Attachment
+| **Icon**                               | **Artifact Description** |
+| -------------- | ------------- |
+| ![](img/Functionality_Overview_4.png)  | Knowledge Base Article |
+| ![](img/Functionality_Overview_5.png)  | Forum Category |
+| ![](img/Functionality_Overview_6.png)  | Forum |
+| ![](img/Functionality_Overview_7.png)  | Thread |
+| ![](img/Functionality_Overview_8.png)  | Help Desk Ticket |
+| ![](img/Functionality_Overview_9.png)  | SpiraTeam® Incident |
+| ![](img/Functionality_Overview_10.png) | Artifact has an Attachment |
 

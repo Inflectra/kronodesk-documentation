@@ -177,14 +177,14 @@ to be filled out when submitting the ticket. The fields that are
 required are displayed in **bold type** with an asterisk(\*) next to
 the field name. When you change the product name field that may
 change the workflow associated with the ticket. If that happens, you
-will see some of the fields change.\
+will see some of the fields change.
 This is normal and allows the administrator to tailor the fields
 required to the type of product (e.g. a web application may need you
 to enter the browser type, whereas a mobile application would need
 to know the cellphone network)
 
 -   **Attachments** -- This section is described in more detail below in
-section 6.2.1.
+[Adding a Document Attachment](#adding-a-document-attachment)
 
 Please note that when a customer is creating a ticket, KronoDesk will
 dynamically search the knowledge base to see if there are any articles
@@ -494,7 +494,7 @@ If you see the following message, it means that your user profile in
 KronoDesk has not been linked to an equivalent SpiraTeam user profile.
 To fix the issue, click on the "user profile" link and enter your
 SpiraTeam RSS Token into your KronoDesk user profile. This is described
-in more detail in section 7.1
+in more detail in [Edit Profile](../User%20Profile/#edit-profile)
 
 ![](img/Help_Desk_73.png)
 

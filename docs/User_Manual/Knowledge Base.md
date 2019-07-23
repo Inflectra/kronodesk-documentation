@@ -52,7 +52,7 @@ If you click on the RSS icon, you can subscribe to the current category
 in an RSS-compatible newsreader.
 
 If you click on an article in the list, it will display the article
-details page described in section 4.2.
+details page described in [Article Details](#article-details).
 
 ### Tag Cloud
 
