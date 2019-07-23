@@ -8,6 +8,14 @@ theme:
   name: mkdocs
   custom_dir: inflectra_mkdocs
 nav:
+  - User Manual:
+    - Functionality Overview: User_Manual\Functionality Overview.md
+    - Home Page: User_Manual\Home Page.md
+    - Knowledge Base: User_Manual\Knowledge Base.md
+    - Forums: User_Manual\Forums.md
+    - Help Desk: User_Manual\Help Desk.md
+    - User Profile: User_Manual\User Profile.md
+    - Reports: User_Manual\Reports.md
   - Quick Start Guide:
     - Getting Started: Quick_Start_Guide\Getting Started.md
     - Using the Help Desk Ticketing System: Quick_Start_Guide\Using the Help Desk Ticketing System.md
