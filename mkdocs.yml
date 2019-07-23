@@ -21,6 +21,21 @@ nav:
     - Using the Help Desk Ticketing System: Quick_Start_Guide\Using the Help Desk Ticketing System.md
     - Configuring and Customizing: Quick_Start_Guide\Configuring and Customizing.md
     - Appendix A-Sample Users: Quick_Start_Guide\Appendix A- Sample Users.md
+  - Administration Guide: 
+    - Installing KronoDesk: Administration_Guide\Installing KronoDesk.md
+    - System Administration: Administration_Guide\System Administration.md
+    - System Settings: Administration_Guide\System Settings.md
+    - Users: Administration_Guide\Users.md
+    - Forum Settings: Administration_Guide\Forum Settings.md
+    - Knowledge Base Settings: Administration_Guide\Knowledge Base Settings.md
+    - Help Desk Settings: Administration_Guide\Help Desk Settings.md
+    - Workflows: Administration_Guide\Workflows.md
+    - Event Notifications: Administration_Guide\Event Notifications.md
+    - Appendices:
+      - Troubleshooting: Administration_Guide\Appendix A -- Troubleshooting.md
+      - Using with SSL: Administration_Guide\Appendix B -- Using with SSL.md
+      - Sending Email through IIS: Administration_Guide\Appendix C -- Sending Email through IIS.md
+      - Upgrading: Administration_Guide\Appendix D -- Upgrading.md
   - Integrations: 
     - Email:
       - Installing: Email_Integration_Guide\Installing the Email Integration Service.md
