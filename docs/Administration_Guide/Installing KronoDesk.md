@@ -1,78 +1,30 @@
-# Installing KronoDesk^®^
+# Installing KronoDesk<sup>®</sup>
 
 This section outlines how to prepare your system for installation of
-KronoDesk^®^, how to actually install the software using the provided
+KronoDesk<sup>®</sup>, how to actually install the software using the provided
 installation package, and finally how to ensure that your web-server is
 correctly configured to ensure secure operation.
 
 The first sub-section will outline what hardware and software
 configurations are supported and the exact installation sequence for
 Windows 2012, 2008, 2003, 8, 7, Vista and Windows XP. The second
-sub-section will explain how to load the KronoDesk^®^ software onto the
+sub-section will explain how to load the KronoDesk<sup>®</sup> software onto the
 server, and discuss common problems and solutions.
 
 The minimum hardware and software requirements for running the
-KronoDesk^®^ system are:
+KronoDesk<sup>®</sup> system are:
 
-+-----------------------------------+-----------------------------------+
-| **Server Requirements**           |                                   |
-+===================================+===================================+
 | **Requirement**                   | **Minimum Specification**         |
-+-----------------------------------+-----------------------------------+
-| **Processor:**                    | Intel® or AMD® x86 or x64         |
-|                                   | compatible processor              |
-+-----------------------------------+-----------------------------------+
+| -------- | -------- | 
+| **Server Requirements** | |
+| **Processor:**                    | Intel® or AMD® x86 or x64 compatible processor              |
 | **Memory:**                       | 8 GB recommended                  |
-+-----------------------------------+-----------------------------------+
-| **Operating System:**             | Windows Server 2008R2             |
-|                                   |                                   |
-|                                   | Windows Server 2012               |
-|                                   |                                   |
-|                                   | Windows Server 2012R2             |
-|                                   |                                   |
-|                                   | Windows Server 2016               |
-|                                   |                                   |
-|                                   | Windows 10, 8, 7 (for demoing)    |
-+-----------------------------------+-----------------------------------+
-| **Database:**                     | Microsoft SQL Server 2017         |
-|                                   |                                   |
-|                                   | Microsoft SQL Server 2016         |
-|                                   |                                   |
-|                                   | Microsoft SQL Server 2014         |
-|                                   |                                   |
-|                                   | Microsoft SQL Server 2012         |
-|                                   |                                   |
-|                                   | Microsoft SQL Server 2008 R2      |
-|                                   |                                   |
-|                                   | SQL Server Express is supported,  |
-|                                   | but not recommended for           |
-|                                   | production due to limitations.    |
-+-----------------------------------+-----------------------------------+
-| **Web Server:**                   | Internet Information Services     |
-|                                   | (IIS) 7.0 or higher               |
-|                                   |                                   |
-|                                   | .NET 4.5.2 Framework or higher    |
-+-----------------------------------+-----------------------------------+
+| **Database:**                     | Microsoft SQL Server 2017 <br> Microsoft SQL Server 2016 <br> Microsoft SQL Server 2014 <br> Microsoft SQL Server 2012 <br> Microsoft SQL Server 2008 R2 <br> SQL Server Express is supported, <br> but not recommended for <br> production due to limitations.    |
+| **Web Server:**                   | Internet Information Services  (IIS) 7.0 or higher <br> .NET 4.5.2 Framework or higher    |
 | **Client Requirements**           |                                   |
-+-----------------------------------+-----------------------------------+
-| **Requirement**                   | **Minimum Specification**         |
-+-----------------------------------+-----------------------------------+
-| **Web Browser:**                  | Mozilla Firefox                   |
-|                                   |                                   |
-|                                   | Google Chrome (Desktop and        |
-|                                   | Android)                          |
-|                                   |                                   |
-|                                   | Apple Safari (Desktop and iOS)    |
-|                                   |                                   |
-|                                   | Microsoft Edge                    |
-|                                   |                                   |
-|                                   | Opera                             |
-|                                   |                                   |
-|                                   | Internet Explorer 11.0 (not       |
-|                                   | recommended)                      |
-+-----------------------------------+-----------------------------------+
+| **Web Browser:**                  | Mozilla Firefox <br> Google Chrome (Desktop and Android) <br> Apple Safari (Desktop and iOS) <br> Microsoft Edge <br> Opera <br> Internet Explorer 11.0 (not recommended)                      |
 
-\*Note that KronoDesk^®^ can be loaded onto either Windows Server or
+\*Note that KronoDesk<sup>®</sup> can be loaded onto either Windows Server or
 workstation editions, provided that the IIS web-server is installed and
 that SQL Server is available as a database engine. However Windows
 workstation editions can only support a maximum of 5 concurrent user web
@@ -86,23 +38,23 @@ Assuming that you have already installed the appropriate version of
 Microsoft Windows onto your computer (or that has been pre-installed for
 you), you need to then make sure that the various prerequisites have
 been correctly added to your installation before trying to install
-KronoDesk^®^. The KronoDesk^®^ installer will check to ensure that the
+KronoDesk<sup>®</sup>. The KronoDesk<sup>®</sup> installer will check to ensure that the
 various prerequisites are in place, and will abort the installation if
 any are missing, indicating to you what action needs to be taken.
 
 We recommend that you install / configure the prerequisites in the
 following order:
 
-Install the .NET Framework v4.5.2
+- Install the .NET Framework v4.5.2
 
-Install SQL Server 2008R2, 2012, 2014, 2016, or 2017.
+- Install SQL Server 2008R2, 2012, 2014, 2016, or 2017.
 
-Install the latest version of Internet Explorer that your server OS
+- Install the latest version of Internet Explorer that your server OS
 allows
 
-Ensure that IIS is installed
+- Ensure that IIS is installed
 
-Ensure that ASP.NET 4.5.2 is enabled
+- Ensure that ASP.NET 4.5.2 is enabled
 
 ## Install the .NET Framework v4.5.2.
 
@@ -160,53 +112,53 @@ the role configuration screen:
 
 Make sure that the following features are enabled:
 
-Web Server (IIS)
+- Web Server (IIS)
 
-Web Server
+    - Web Server
 
-Common HTTP Features
+        - Common HTTP Features
 
-Default Document
+            - Default Document
 
-Directory Browsing
+            - Directory Browsing
 
-HTTP Errors
+            - HTTP Errors
 
-Static Content
+            - Static Content
 
-HTTP Redirection
+            - HTTP Redirection
 
-Application Development
+        - Application Development
 
-.NET Extensibility 3.5
+            - .NET Extensibility 3.5
 
-.NET Extensibility 4.5
+            - .NET Extensibility 4.5
 
-ASP.NET 3.5
+            - ASP.NET 3.5
 
-ASP.NET 4.5
+            - ASP.NET 4.5
 
-ISAPI Extensions
+            - ISAPI Extensions
 
-ISAPI Filters
+            - ISAPI Filters
 
-Management Tools
+        - Management Tools
 
-IIS Management Console
+            - IIS Management Console
 
-IIS Management Service
+            - IIS Management Service
 
-.NET Framework 4.5 Features
+- .NET Framework 4.5 Features
 
-.NET Framework 4.5
+    - .NET Framework 4.5
 
-ASP.NET 4.5
+    - ASP.NET 4.5
 
-WCF Services
+    - WCF Services
 
-HTTP Activation
+        - HTTP Activation
 
-TCP Port Sharing
+        - TCP Port Sharing
 
 To verify that this IIS is now installed, type
 [http://localhost](http://localhost/) into the address bar of Internet
@@ -254,13 +206,13 @@ copy of the runtime in the CustomerArea of the Inflectra website.
 # Installing the Software
 
 Now that all the prerequisites have been correctly installed, you are
-now ready to install KronoDesk^®^ onto your system. To perform the
+now ready to install KronoDesk<sup>®</sup> onto your system. To perform the
 installation, you will need the installation package downloaded from the
-Inflectra^®^ website, the name of the organization that the software is
+Inflectra<sup>®</sup> website, the name of the organization that the software is
 licensed to, and the actual license key code which will be available in
-the customer area of the Inflectra^®^ website.
+the customer area of the Inflectra<sup>®</sup> website.
 
-To start the installation, double-click on the KronoDesk^®^ installation
+To start the installation, double-click on the KronoDesk<sup>®</sup> installation
 package (it will have a filename of the form KronoDesk-v3.0.msi), and
 the Windows Installer will display the following dialog box:
 
@@ -269,7 +221,7 @@ the Windows Installer will display the following dialog box:
 
 
 
-If you are upgrading from an earlier version of KronoDesk^®^, the dialog
+If you are upgrading from an earlier version of KronoDesk<sup>®</sup>, the dialog
 box will be similar except that it will instead let you know that you
 are upgrading from an earlier version to the current one:
 
@@ -282,10 +234,10 @@ In this instance the installer will update the program files on your
 computer and migrate your data into the new version seamlessly. If for
 any reason you **don't see the upgrade message** and you have an
 existing installation, don't continue, but instead **contact
-Inflectra^®^ customer support first**. This will ensure that your
+Inflectra<sup>®</sup> customer support first**. This will ensure that your
 existing data is not overwritten by a clean install.
 
-In either case, click the \<Next\> button to start the installation
+In either case, click the <Next\> button to start the installation
 wizard which will gather information from you regarding how you want to
 setup the system, before actually installing the web-server files and
 database components. The next page of the installation wizard will
@@ -302,10 +254,10 @@ will display a red 'X' icon next to the missing component(s). If this
 happens, please refer to section 2.1 for installation of any
 prerequisites. If for any reason you have the prerequisite installed but
 the installer was not able to find it (this can occasionally happen on
-certain environments), click the \<Ignore\> button to proceed with the
+certain environments), click the <Ignore\> button to proceed with the
 installation.
 
-Once the prerequisites have been correctly installed, clicking \<Next\>
+Once the prerequisites have been correctly installed, clicking <Next\>
 will bring you to the next page in the installation wizard:
 
 ![](img/Installing_KronoDesk_10.png)
@@ -313,13 +265,13 @@ will bring you to the next page in the installation wizard:
 
 
 
-The next screen in the installation wizard outlines the KronoDesk^®^ End
+The next screen in the installation wizard outlines the KronoDesk<sup>®</sup> End
 User License Agreement (EULA). Please read this carefully as it
 describes the legal contract between you -- the user of the software --
-and Inflectra^®^ Corporation, the developer and publisher. Once you have
+and Inflectra<sup>®</sup> Corporation, the developer and publisher. Once you have
 read the agreement and understood your rights and obligations, select
 the radio button marked "I accept the terms in the License Agreement"
-and click the \<Next\> button.
+and click the <Next\> button.
 
 The following screen will be displayed:
 
@@ -328,7 +280,7 @@ The following screen will be displayed:
 
 
 
-Click on the KronoDesk^®^ button to confirm that you want to install
+Click on the KronoDesk<sup>®</sup> button to confirm that you want to install
 KronoDesk. Once you have done this, the following screen will be
 displayed:
 
@@ -339,7 +291,7 @@ displayed:
 
 You need to enter your full name, the ***organization that was issued
 the software license***, and finally the full hexadecimal license key
-that was provided with the software. Once you click \<Next\>, the
+that was provided with the software. Once you click <Next\>, the
 installer will verify that all three were entered, and that the license
 key matches the product being installed and that it matches the
 organization name. The installer will warn you of any discrepancies, but
@@ -347,10 +299,10 @@ will allow you to proceed; however after installation, the system will
 not operate until a correct license key is entered.
 
 If for any reason you are unable to get the provided license key to
-work, please contact Inflectra^®^ customer support immediately and they
+work, please contact Inflectra<sup>®</sup> customer support immediately and they
 will resolve the issue.
 
-After clicking \<Next\>, you will be given the choice of installation to
+After clicking <Next\>, you will be given the choice of installation to
 perform:
 
 ![](img/Installing_KronoDesk_13.png)
@@ -358,7 +310,7 @@ perform:
 
 
 
-By default, the installer will install all of the KronoDesk^®^ features
+By default, the installer will install all of the KronoDesk<sup>®</sup> features
 onto the target system, so we recommend choosing "Complete
 Installation", which will both install the complete system --
 application and database. For advanced users who want to change the
@@ -386,14 +338,14 @@ in which case the following screen is displayed:
 
 This screen allows you to change the name of the web-site URL that will
 be user to access the system. By default, users would need to type into
-their browsers: http://\<server name\>/KronoDesk. Should
+their browsers: http://<server name\>/KronoDesk. Should
 you want to have a different name -- other than KronoDesk -- change the
 name in the Virtual Directory box, otherwise simply accept the default
-name and click \<Next\>. Note: The installer will check to make sure
+name and click <Next\>. Note: The installer will check to make sure
 that the name you have chosen is not already in use, and will warn you
 if it is.
 
-Upon clicking \<Next\>, you will be taken the database connection
+Upon clicking <Next\>, you will be taken the database connection
 screen:
 
 ![](img/Installing_KronoDesk_15.png)
@@ -412,7 +364,7 @@ residing on the *same* server. In this case, choose the "Windows
 Authentication" option and the Login/Password boxes will be disabled. In
 this case, the installer will connect to the database using your current
 Windows login to create the application database objects, and
-KronoDesk^®^ will connect to the database during normal operation using
+KronoDesk<sup>®</sup> will connect to the database during normal operation using
 either the ASPNET or NETWORK SERVICE Windows accounts (it depends on the
 version of the operating system).
 
@@ -423,7 +375,7 @@ databases will be residing on *different* servers across the network. In
 this case, choose "SQL Server Authentication" and provide a SQL Server
 Login that has Database Owner (DB-Owner) permissions -- e.g. the built
 in System Administrator (SA) account. The installer will use this
-DB-Owner account to create the database objects, and KronoDesk^®^ will
+DB-Owner account to create the database objects, and KronoDesk<sup>®</sup> will
 use a special login (called KronoDesk by default) for normal application
 operations.
 
@@ -435,7 +387,7 @@ name is to open up the SQL Server Administrative console (typically by
 clicking Start \> Programs \> Microsoft SQL Server \> Enterprise
 Manager) and look for the name of the server.
 
-Once you have entered the various pieces of information, click \<Next\>.
+Once you have entered the various pieces of information, click <Next\>.
 The installer will attempt to connect to the database using the provided
 information, and it will display an error message if any of the
 information is incorrect. Assuming the information is correct, the
@@ -453,15 +405,15 @@ they will be read-only. Also if you chose "Windows Authentication" then
 the Database Login field will be set to the built-in Windows account
 associated with ASP.NET for the specific operating system being
 installed on (and cannot be changed). Once you have reviewed this page
-and made any changes, you should click \<Next\> to proceed:
+and made any changes, you should click <Next\> to proceed:
 
 ![](img/Installing_KronoDesk_17.png)
 
 
 
 
-Click the \<Install\> button to actually begin the process of installing
-KronoDesk^®^ onto your system. If you are installing KronoDesk^®^ onto
+Click the <Install\> button to actually begin the process of installing
+KronoDesk<sup>®</sup> onto your system. If you are installing KronoDesk<sup>®</sup> onto
 Windows Vista (or later), then you will first be prompted by the Windows
 User Access Control (UAC) security system to confirm that you want to
 install a new piece of software. Click the option that confirms you want
@@ -483,12 +435,12 @@ displayed:
 
 
 
-Congratulations! You have successfully installed KronoDesk^®^ onto your
+Congratulations! You have successfully installed KronoDesk<sup>®</sup> onto your
 system. If you type <http://localhost/KronoDesk> into your browser you
-should see the KronoDesk^®^ home page, as illustrated in the
-*KronoDesk*^®^ *User Manual*. If for any reason you don't see the home
+should see the KronoDesk<sup>®</sup> home page, as illustrated in the
+*KronoDesk*<sup>®</sup> *User Manual*. If for any reason you don't see the home
 page, please refer to *Appendix A -- Troubleshooting IIS* or contact
-Inflectra^®^ Technical Support using one of the methods described at our
+Inflectra<sup>®</sup> Technical Support using one of the methods described at our
 website <http://www.inflectra.com/Support>.
 
 The default login/password for accessing KronoDesk is:
@@ -501,10 +453,10 @@ The default login/password for accessing KronoDesk is:
 
 It is important to note that by default, all web pages served by IIS
 using the HTTP protocol are unencrypted, and as such, the usernames and
-passwords used by KronoDesk^®^ to log into the application can be read
-by network sniffing tools. If you are using KronoDesk^®^ purely within
+passwords used by KronoDesk<sup>®</sup> to log into the application can be read
+by network sniffing tools. If you are using KronoDesk<sup>®</sup> purely within
 an intranet environment, this may not be an issue. However if you are
-externally hosting KronoDesk^®^ onto a publicly accessible website, we
+externally hosting KronoDesk<sup>®</sup> onto a publicly accessible website, we
 recommend installing a Secure Sockets Layer (SSL) encryption
 certificate, and restricting all web-traffic to the secure HTTPS
 protocol instead. For details on how to perform this task, please refer

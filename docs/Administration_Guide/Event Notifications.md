@@ -35,15 +35,15 @@ The **Firing Events** section of the notification lets you specify which
 events will trigger the notification being sent. There are three types
 of event that can occur:
 
-**New Ticket** -- When a new help desk ticket is created (by a customer)
+- **New Ticket** -- When a new help desk ticket is created (by a customer)
 this event is triggered. If you want the notification to be sent when a
 new ticket is created, you should check this option.
 
-**Note Added** - When a note is added by a user to an existing help desk
+- **Note Added** - When a note is added by a user to an existing help desk
 ticket, this event is triggered. If you want the notification to be sent
 when a note is added, you should check this option.
 
-**Field Changed** -- When one of the checked fields is changed by a
+- **Field Changed** -- When one of the checked fields is changed by a
 user, this event is triggered. Check any of the fields that you want to
 trigger the notification in question.
 
@@ -56,16 +56,16 @@ The **Notified Users** section of the notification lets you specify
 which users will receive the email notifications when the event gets
 triggered. There are four types of user that can be specified:
 
-**Ticket Opener** -- This option will result in the notification being
+- **Ticket Opener** -- This option will result in the notification being
 sent to the person that originally opened the ticket.
 
-**Original Owner** -- This option will result in the notification being
+- **Original Owner** -- This option will result in the notification being
 sent to the person that the ticket was originally assigned to.
 
-**Current Owner** -- This option will result in the notification being
+- **Current Owner** -- This option will result in the notification being
 sent to the person that the ticket is now assigned to.
 
-**Notification Roles** -- These options allows you to specify which
+- **Notification Roles** -- These options allows you to specify which
 other roles in the system will get notified about changes to the ticket.
 Only Internal roles can be selected.
 

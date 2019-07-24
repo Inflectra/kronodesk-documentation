@@ -1,6 +1,6 @@
 # System Administration
 
-Now that you have successfully installed KronoDesk^®^, this section of
+Now that you have successfully installed KronoDesk<sup>®</sup>, this section of
 the guide outlines how to perform the typical system-wide administrative
 tasks necessary for setting up projects in the system, managing users
 and verifying the license information. To perform these tasks, you need

@@ -68,7 +68,7 @@ when they login without choosing the 'Remember Me' option.
 
 -   **Keep Me Logged-In Expiration** - This specifies the amount of time
 (in minutes) after which a user will be logged out due to inactivity
-if they have chosen to login with the \'Keep Me Logged-In\' option.
+if they have chosen to login with the 'Keep Me Logged-In' option.
 This should normally be longer than the previous setting.
 
 ## Manage Users
@@ -212,10 +212,7 @@ edit their own profile.
 -   **Users**: List of users that are members of this organization.
 
 Users can be added by clicking the add user button
-(![](img/Users_38.png)
-
-
-), and selecting the users to be added. There are
+(![](img/Users_38.png)), and selecting the users to be added. There are
 three roles a user can be inside an organization:
 
 -   **Member**: These customers can see other organization tickets and

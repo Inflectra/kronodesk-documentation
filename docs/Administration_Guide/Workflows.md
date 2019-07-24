@@ -39,7 +39,7 @@ linked to an active workflow at all times.
 
 ## Edit Workflow Details
 
-Clicking on the \<Steps\> button of an inactive workflow brings up the
+Clicking on the <Steps\> button of an inactive workflow brings up the
 following screen that lists all the workflow steps and workflow
 transitions that comprise the workflow:
 
@@ -60,8 +60,8 @@ which transition the user takes.
 Clicking on the name of a step or transition takes you to the
 appropriate details page (see below) where you can set the properties of
 the step or transition respectively. To delete an existing transition,
-simply click the \<Delete\> button after the transition name, and to add
-a new transition, click the \<Add Transition\> button in the Operations
+simply click the <Delete\> button after the transition name, and to add
+a new transition, click the <Add Transition\> button in the Operations
 column.
 
 ## Edit Workflow Transition
@@ -87,29 +87,29 @@ for a user to actually execute the transition (i.e. move the ticket from
 the originating status to the destination status). The conditions allow
 you to set three types of user role:
 
-The opener of the ticket can be allowed to execute the transition when
+- The opener of the ticket can be allowed to execute the transition when
 the transition occurs. For example, when a ticket is marked as Waiting
 on Customer, the opener should be the only one who's allowed to move it
 to Closed.
 
-The assignee of the ticket can be allowed to execute the transition when
+- The assignee of the ticket can be allowed to execute the transition when
 the transition occurs. For example, when a ticket is marked as Assigned,
 the assigned agent should be the only one who's allowed to move it to
 Waiting on Customer.
 
-A user with a specified role can be allowed to execute the transition,
+- A user with a specified role can be allowed to execute the transition,
 when the transition occurs regardless of whether they are the opener or
 assignee. For example a user with role "Manager" might want the power to
 close all tickets regardless of assignee status.
 
-Whether a Digital Signature is required for this transition or not. If
+- Whether a Digital Signature is required for this transition or not. If
 set to Yes, then when the transition is performed, the user must
 re-enter their username, password, and a note (if applicable) on the
 transition. This signature is recorded in the History for future
 reporting.
 
 You can set any of these conditions by changing the drop-down list
-and/or check-boxes and clicking the appropriate \<Save\> button.
+and/or check-boxes and clicking the appropriate <Save\> button.
 
 ## Edit Workflow Step
 
@@ -146,5 +146,5 @@ appropriate place in the workflow.
 
 To actually make these changes, all you need to do is select the
 appropriate checkboxes in the list of fields and custom properties and
-click the corresponding \<Save\> button.
+click the corresponding <Save\> button.
 

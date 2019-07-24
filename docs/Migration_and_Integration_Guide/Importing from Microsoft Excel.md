@@ -178,7 +178,7 @@ entering data are listed below:
 | ----- | ----- |
 | Tkt \#                  | Stores the ID of the ticket. Should be left blank for new items being added to KronoDesk |
 | **Ticket Subject**      | The subject / name of the help desk ticket. |
-| **Ticket Description**  | The long description of the ticket. If you want it formatted, you need to add HTML tags such as \<b\> for bold |
+| **Ticket Description**  | The long description of the ticket. If you want it formatted, you need to add HTML tags such as <b\> for bold |
 | **Product**           |   The name of the KronoDesk product that you want to associate the ticket with. It needs to be one of the values from the dropdown list. |
 | **Status**            |   The status of the ticket. It needs to be one of the values from the dropdown list. |
 | Priority              |   The priority of the ticket. It needs to be one of the values from the dropdown list. |
@@ -187,7 +187,7 @@ entering data are listed below:
 | Assignee              |   The internal user that the ticket should be assigned to Needs to be the ID of the user (e.g. user US00005 would be entered as just 5) |
 | Creation Date         |   The date that the ticket was logged. If this field is not populated, the current date is used instead |
 | Closed Date           |   The date that the ticket was closed. Do not enter a value in this field if the ticket is not in a closed status. |
-| Comment               |   The description of a comment/note that should be appended to the ticket. If you want it formatted, you need to add HTML tags such as \<b\> for bold. *Note that this field always appends, so if you want to add two comments, just enter the first value and click \[Export\], then replace it with the second value and click \[Export\]* |
+| Comment               |   The description of a comment/note that should be appended to the ticket. If you want it formatted, you need to add HTML tags such as <b\> for bold. *Note that this field always appends, so if you want to add two comments, just enter the first value and click \[Export\], then replace it with the second value and click \[Export\]* |
 
 Note: the columns that are required are listed in **bold** type.
 

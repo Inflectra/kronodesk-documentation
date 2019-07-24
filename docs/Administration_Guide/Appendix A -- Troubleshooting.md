@@ -20,20 +20,20 @@ raised by "MSSQLSERVER", "KronoDesk", "DCOM", "ASPNET" or "IIS". Click
 on the error message, and copy the text of the message into a text
 editor (e.g. Notepad).
 
-Before contacting Inflectra^®^ customer support with the specific error
+Before contacting Inflectra<sup>®</sup> customer support with the specific error
 message, here are a couple of common causes for the above errors
 together with the appropriate resolutions:
 
-**The ASP.NET process account has been disabled**\
+- **The ASP.NET process account has been disabled**<br>
 Go to Start \> Control Panel \> Administrative Tools \> Computer
 Management and launch the Windows computer management console. Expand
-Local Users and Groups \> Users and then double-click on the \'ASPNET\'
-account. Make sure that the ASPNET user is not disabled.\
+Local Users and Groups \> Users and then double-click on the 'ASPNET'
+account. Make sure that the ASPNET user is not disabled.
 If you are using Windows 2003 or 2008 Server the ASPNET user is set
 per-application pool and typically is set to the built-in NETWORKSERVICE
 account, so this won't apply.
 
-**The ASP.NET process account does not have sufficient permissions**\
+- **The ASP.NET process account does not have sufficient permissions**<br>
 Right-click on the C:\\WINDOWS\\Microsoft.NET\\Framework\\v4.0.30319
 folder (and any other versions of .NET that are listed) and make sure
 that the ASPNET, NETWORKSERVICE and LOCALSERVICE accounts are all listed
@@ -42,7 +42,7 @@ Windows 2003 or 2008 Server, open up the IIS manager and right-click on
 the Application Pool that KronoDesk® is running under and make sure that
 the identity listed has Full Control permissions on the same folders.
 
-**The Windows Event Log is full**\
+- **The Windows Event Log is full**<br>
 Open up the Application and System event logs, right-click on the log
 name and choose Properties. Make sure that both are set to "overwrite
 events as needed". If they are not set to overwrite as needed, change
@@ -95,7 +95,7 @@ the dialog box, and the registry will open:
 
 Expand the folders marked "My Computer", "HKEY\_LOCAL\_MACHINE",
 "SOFTWARE" and "Microsoft" in turn and navigate to the folder marked
-"MSDTC". Click the \<Delete\> button on your keyboard, and click \<OK\>
+"MSDTC". Click the <Delete\> button on your keyboard, and click <OK\>
 on the confirmation box. Now close the registry editor.
 
 Now you need to click on Start \>Settings \> Control Panel \> Add or
@@ -108,7 +108,7 @@ Components":
 
 
 Don't change any of the selected components, but instead simply click
-the \<Next\> button. The Windows installer will detect that the MSDTC is
+the <Next\> button. The Windows installer will detect that the MSDTC is
 missing (due to the registry change you made) and will now reinstall it
 correctly. Once this has finished, reboot the system and you should now
 be able to access ASP and ASP.NET applications from within IIS.

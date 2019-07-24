@@ -58,6 +58,5 @@ the new category information and click \[Save\].
 confirm the deletion, after which the category will be deleted from
 the system. *Note: If you delete an article category, the system
 will delete all the child categories and articles contained within
-that category.\
-*
+that category.*
 

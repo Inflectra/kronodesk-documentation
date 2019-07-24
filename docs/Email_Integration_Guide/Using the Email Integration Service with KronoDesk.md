@@ -21,7 +21,7 @@ created in KronoDesk.
 them know that the ticket was received:
 
 
-> \-\-\-\-\--=\> Please keep your reply above this line. \<=-
+> \-\-\-\-\--=\> Please keep your reply above this line. <=-
 > 
 > Hello Fred Bloggs
 > 

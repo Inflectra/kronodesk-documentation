@@ -98,8 +98,7 @@ the new category information and click \[Save\].
 confirm the deletion, after which the category will be deleted from
 the system. *Note: If you delete a forum category, the system will
 delete all the forums, threads and message contained within that
-category.\
-*
+category.*
 
 To view the list of forums associated with a particular category, you
 should click on the "View Forums" link that will display the appropriate
@@ -142,6 +141,5 @@ information and click \[Save\].
 "Remove" hyperlink next to the forum. You will be asked to confirm
 the deletion, after which the forum will be deleted from the system.
 *Note: If you delete a forum, the system will delete all the threads
-and message contained within that forum.\
-*
+and message contained within that forum.*
 

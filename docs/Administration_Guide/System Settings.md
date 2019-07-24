@@ -190,11 +190,10 @@ customer's home page.
 to display to the user. These are displayed in the footer of the
 application.
 
-[Page Texts:\
-]{.underline}This is a list of links to pages that have inline editors
+Page Texts: This is a list of links to pages that have inline editors
 to edit and adjust how the pages look to users viewing the pages.
 
-Page Javascript:\
+Page Javascript:
 This allows the administrator to add some script to execute on every
 page. All pages will run the Javascript entered here, except for
 Administration pages. This would be used to enter in Analytics trackers
@@ -323,7 +322,7 @@ created.
 
 ## Custom Lists
 
-Custom Lists at this time are used in [Custom](#custom-fields) Field
+Custom Lists at this time are used in [Custom Field](#custom-fields)
 definitions. The main custom property list screen lists all available
 lists available for assignment to a custom field.
 
@@ -375,7 +374,7 @@ when selecting or researching a product.
 describe the product.
 
 -   **Workflow**: This is the selected workflow for Tickets assigned to
-this product. See [Workflows](#workflows), below.
+this product. See [Workflows](../Workflows/).
 
 ## License Details
 
@@ -402,14 +401,14 @@ need to reinstall KronoDesk. All you need to do is simply change the
 information in the **organization** and **license key** text-boxes to
 match the license key and organization name found in the customer area
 of our website (<http://www.inflectra.com/CustomerArea>) and click the
-\<Update\> button.
+<Update\> button.
 
 If there is an issue with the license key (e.g. a trial version that is
 passed its expiration date, or where the license key doesn't match the
 organization name) an error will be displayed describing the specific
 issue with the information you entered. If you are unable to get the
 system to work with the license key information, please contact
-Inflectra^®^ customer support at: <support@inflectra.com>.
+Inflectra<sup>®</sup> customer support at: <support@inflectra.com>.
 
 ## Event Log 
 
