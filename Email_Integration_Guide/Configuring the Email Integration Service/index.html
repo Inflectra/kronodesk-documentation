@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="https://kronodoc.inflectra.com/Email_Integration_Guide/Configuring the Email Integration Service/">
+
+<link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Configuring - KronoDocs</title>
+<link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+<link href="../../css/font-awesome.min.css" rel="stylesheet">
+<link href="../../css/base.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/base.css">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+<script src="../../js/jquery-1.10.2.min.js" defer></script>
+<script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+<script src="/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+<a class="navbar-brand" href="../..">KronoDocs</a>
+
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../User_Manual/Functionality Overview/">Functionality Overview</a>
+</li>
+                                    
+<li >
+    <a href="../../User_Manual/Home Page/">Home Page</a>
+</li>
+                                    
+<li >
+    <a href="../../User_Manual/Knowledge Base/">Knowledge Base</a>
+</li>
+                                    
+<li >
+    <a href="../../User_Manual/Forums/">Forums</a>
+</li>
+                                    
+<li >
+    <a href="../../User_Manual/Help Desk/">Help Desk</a>
+</li>
+                                    
+<li >
+    <a href="../../User_Manual/User Profile/">User Profile</a>
+</li>
+                                    
+<li >
+    <a href="../../User_Manual/Reports/">Reports</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Quick_Start_Guide/Getting Started/">Getting Started</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick_Start_Guide/Using the Help Desk Ticketing System/">Using the Help Desk Ticketing System</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick_Start_Guide/Configuring and Customizing/">Configuring and Customizing</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick_Start_Guide/Appendix A- Sample Users/">Appendix A-Sample Users</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Administration_Guide/Installing KronoDesk/">Installing KronoDesk</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration_Guide/System Administration/">System Administration</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration_Guide/System Settings/">System Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration_Guide/Users/">Users</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration_Guide/Forum Settings/">Forum Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration_Guide/Knowledge Base Settings/">Knowledge Base Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration_Guide/Help Desk Settings/">Help Desk Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration_Guide/Workflows/">Workflows</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration_Guide/Event Notifications/">Event Notifications</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Appendices</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Administration_Guide/Appendix A -- Troubleshooting/">Troubleshooting</a>
+</li>
+            
+<li >
+    <a href="../../Administration_Guide/Appendix B -- Using with SSL/">Using with SSL</a>
+</li>
+            
+<li >
+    <a href="../../Administration_Guide/Appendix C -- Sending Email through IIS/">Sending Email through IIS</a>
+</li>
+            
+<li >
+    <a href="../../Administration_Guide/Appendix D -- Upgrading/">Upgrading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Integrations <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Email</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../Installing the Email Integration Service/">Installing</a>
+</li>
+            
+<li class="active">
+    <a href="./">Configuring</a>
+</li>
+            
+<li >
+    <a href="../Using the Email Integration Service with KronoDesk/">Using</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Migration</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Migration_and_Integration_Guide/Importing from Microsoft Excel/">Importing from Excel</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+<li>
+  <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+    <i class="fa fa-search"></i>
+  </a>
+</li>
+<li >
+  <a rel="next" href="../Installing the Email Integration Service/" >
+    <i class="fa fa-arrow-left"></i></a>
+</li>
+<li >
+  <a rel="prev" href="../Using the Email Integration Service with KronoDesk/" ><i
+      class="fa fa-arrow-right"></i></a>
+</li>
+                            <li>
+                                <a href="https://www.inflectra.com">Inflectra</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a
+                href="#configuring-the-email-integration-service">Configuring the Email Integration Service</a></li>
+        <li class="second-level"><a href="#connecting-to-the-kronodesk-server">Connecting to the KronoDesk Server</a></li>
+        
+        <li class="second-level"><a href="#connecting-to-the-pop3-mail-server">Connecting to the POP3 Mail Server</a></li>
+        
+        <li class="second-level"><a href="#configuring-the-advanced-settings">Configuring the Advanced Settings</a></li>
+        
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="configuring-the-email-integration-service">Configuring the Email Integration Service</h1>
+<p>Once you have completed the installation, you can configure the email
+integration service by going to Start > Program Files > Inflectra
+SpiraTeam > Tools > Email Integration which will bring up the
+management interface.</p>
+<p><img alt="" src="../img/Configuring_the_Email_Integration_Service_6.png" /></p>
+<h2 id="connecting-to-the-kronodesk-server">Connecting to the KronoDesk Server</h2>
+<p>The first tab lets you specify the KronoDesk instances that the email
+integration service will connect to. To add a new KronoDesk server,
+click on the green Add (+) icon to switch the screen to allow you to
+enter a new KronoDesk server:</p>
+<p><img alt="" src="../img/Configuring_the_Email_Integration_Service_7.png" /></p>
+<p>You need to enter the following information:</p>
+<ul>
+<li>
+<p><strong>Server URL -</strong> The URL to KronoDesk server</p>
+</li>
+<li>
+<p><strong>Account Login -</strong> The account login that will be used to connect
+to KronoDesk. It needs to be a user with the "administrator" role.</p>
+</li>
+<li>
+<p><strong>Account Password -</strong> This is the password for the account</p>
+</li>
+</ul>
+<p>Click the "Test" button to verify the connection. Once it has passed,
+click the Save icon to save the new KronoDesk server information.</p>
+<p>To modify an existing KronoDesk server instance, just click on its name
+in the server list. To delete a server, select its name in the server
+list and click the Delete icon (X).</p>
+<p>Once you have entered all the KronoDesk instances that you will be
+connecting to, click the "Next" button to move to the next tab and
+configure the mail server integration.</p>
+<h2 id="connecting-to-the-pop3-mail-server">Connecting to the POP3 Mail Server</h2>
+<p>The "POP3 Accounts" tab displays a list of all the configured mail
+servers:</p>
+<p><img alt="" src="../img/Configuring_the_Email_Integration_Service_8.png" /></p>
+<p>Initially it will be empty, so just click the Add (+) icon to add a new
+mail server:</p>
+<p><img alt="" src="../img/Configuring_the_Email_Integration_Service_9.png" /></p>
+<p>You need to enter the following information:</p>
+<ul>
+<li>
+<p><strong>Account Email --</strong> This should be the email address that will be
+polled for new support emails.</p>
+</li>
+<li>
+<p><strong>Mail Server --</strong> This should be the fully-qualified name or IP
+address of your POP3 mail server.</p>
+</li>
+<li>
+<p><strong>Port --</strong> This is the port that your mail server expects incoming
+POP3 requests to use. The default for unencrypted POP3 requests is
+110 and the default for SSL encrypted POP3 requests is 995.</p>
+</li>
+<li>
+<p><strong>Use SSL --</strong> You should check this option if your mail server
+requires a secure SSL connection.</p>
+</li>
+<li>
+<p><strong>Login/Password --</strong> You should enter the login/password for the
+mail server that allows reading of inbound messages for the email
+address specified above.</p>
+</li>
+<li>
+<p><strong>Remove Messages --</strong> Checking this option will make the email
+integration service remove the email messages from in the Inbox of
+the user's email account. We recommend leaving this unchecked when
+first using the service. Once you are happy that the integration is
+correctly handling spam and not ignoring correct messages, you can
+check this option to prevent the email inbox getting too large.</p>
+</li>
+<li>
+<p><strong>Attach Message --</strong> Checking this option will attach the original
+email message to the new help desk ticket created in KronoDesk as
+well as populating the ticket with the contents of the message. This
+is useful when debugging a new installation but typically would be
+unchecked during normal operation.</p>
+</li>
+<li>
+<p><strong>Application Server --</strong> You should specify the instance of
+KronoDesk that this email account will be linked to.</p>
+</li>
+<li>
+<p><strong>Default Product</strong> -- KronoDesk requires that all new help desk
+tickets be submitted with a selected product. If the inbound emails
+have a product name specified in one of the email headers it will be
+automatically routed to the correct product. In other cases, the
+system will route the new help desk ticket to the default product
+chosen in this setting.</p>
+</li>
+<li>
+<p><strong>RegEx Match Content</strong> -- Checking this option will allow the email
+integration service to do a name match in the body of the email for
+possible product names instead of just relying on the "default
+product". For example if your email contains "Product1" in the
+message text it will be routed to Product1 in KronoDesk.</p>
+</li>
+</ul>
+<h2 id="configuring-the-advanced-settings">Configuring the Advanced Settings</h2>
+<p>Once you have finished configuring the KronoDesk server instances and
+POP3 mail accounts, you can click on the "Advanced Settings" tab to
+setup special rules that prevent emails from specific accounts being
+processed as well as allow the email integration service to look for
+special mail headers and subject tokens that might indicate bulk / spam
+messages that should be ignored.</p>
+<p><img alt="" src="../img/Configuring_the_Email_Integration_Service_10.png" /></p>
+<p>You can configure the following settings:</p>
+<ul>
+<li>
+<p><strong>Enable Trace Logging --</strong> When this option is checked, the email
+integration service will log information messages to the Windows
+Application Event Log on the machine running the integration
+service. This is useful when first deploying the system or when you
+are encountering issues and Inflectra support personnel have asked
+you switch on trace logging to aid in support. For normal use we
+recommend turning this setting off to avoid too many messages being
+logged in the Event Log.</p>
+</li>
+<li>
+<p><strong>Minutes Between Polls --</strong> This setting specifies the interval (in
+minutes) between each time the email integration service attempts to
+retrieve new email messages from the email server.</p>
+</li>
+<li>
+<p><strong>Ignore Addresses --</strong> In this section you can add a list of any
+email addresses that you want to ignore and not use for creating new
+KronoDesk help desk tickets. If there are any known senders or
+internal email accounts, you should add them in this section.</p>
+</li>
+</ul>
+<p>In addition, there are two other sub-tabs to the Advanced Settings tab
+that provide configuration options:</p>
+<p><img alt="" src="../img/Configuring_the_Email_Integration_Service_11.png" /></p>
+<p>The "Ignore Headers" section allows you to specify any email message
+headers that if present in an email message will be ignored by the email
+integration service.</p>
+<p><img alt="" src="../img/Configuring_the_Email_Integration_Service_12.png" /></p>
+<p>The "Ignore Keywords" section allows you to specify any keywords that if
+present in the subject-line or body of an email message will be ignored
+by the email integration service. Some mail servers that have built-in
+SPAM detection systems will automatically add SPAM-HIGH, SPAM-MEDIUM,
+SPAM-LOW to the subject line (for example).</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
