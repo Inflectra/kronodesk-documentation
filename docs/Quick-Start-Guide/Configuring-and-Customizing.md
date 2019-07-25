@@ -83,7 +83,7 @@ users, products and forums.
 
 For more information about any of the features, please refer to the
 [*KronoDesk User
-Manual*](http://www.inflectra.com/Documents/KronoDesk%20v2.0%20User%20Manual.pdf)
+Manual*](http://www.inflectra.com/Documents/KronoDesk-v2.0-User-Manual.pdf)
 or the [*KronoDesk Administration & Install
-Guide*](http://www.inflectra.com/Documents/KronoDesk%20v2.0%20Administration%20Guide.pdf).
+Guide*](http://www.inflectra.com/Documents/KronoDesk-v2.0-Administration-Guide.pdf).
 

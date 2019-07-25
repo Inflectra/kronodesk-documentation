@@ -494,7 +494,7 @@ If you see the following message, it means that your user profile in
 KronoDesk has not been linked to an equivalent SpiraTeam user profile.
 To fix the issue, click on the "user profile" link and enter your
 SpiraTeam RSS Token into your KronoDesk user profile. This is described
-in more detail in [Edit Profile](../User%20Profile/#edit-profile)
+in more detail in [Edit Profile](../User-Profile/#edit-profile)
 
 ![](img/Help_Desk_73.png)
 
