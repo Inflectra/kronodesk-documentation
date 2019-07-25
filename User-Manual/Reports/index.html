@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="https://kronodoc.inflectra.com/User-Manual/Reports/">
+
+<link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Reports - KronoDocs</title>
+<link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+<link href="../../css/font-awesome.min.css" rel="stylesheet">
+<link href="../../css/base.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/base.css">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+<script src="../../js/jquery-1.10.2.min.js" defer></script>
+<script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+<script src="/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+<a class="navbar-brand" href="../..">KronoDocs</a>
+
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../Functionality-Overview/">Functionality Overview</a>
+</li>
+                                    
+<li >
+    <a href="../Home-Page/">Home Page</a>
+</li>
+                                    
+<li >
+    <a href="../Knowledge-Base/">Knowledge Base</a>
+</li>
+                                    
+<li >
+    <a href="../Forums/">Forums</a>
+</li>
+                                    
+<li >
+    <a href="../Help-Desk/">Help Desk</a>
+</li>
+                                    
+<li >
+    <a href="../User-Profile/">User Profile</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Reports</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Getting-Started/">Getting Started</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Using-the-Help-Desk-Ticketing-System/">Using the Help Desk Ticketing System</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Configuring-and-Customizing/">Configuring and Customizing</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Appendix-A--Sample-Users/">Appendix A-Sample Users</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Administration-Guide/Installing-KronoDesk/">Installing KronoDesk</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/System-Administration/">System Administration</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/System-Settings/">System Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Users/">Users</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Forum-Settings/">Forum Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Knowledge-Base-Settings/">Knowledge Base Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Help-Desk-Settings/">Help Desk Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Workflows/">Workflows</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Event-Notifications/">Event Notifications</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Appendices</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Administration-Guide/Appendix-A----Troubleshooting/">Troubleshooting</a>
+</li>
+            
+<li >
+    <a href="../../Administration-Guide/Appendix-B----Using-with-SSL/">Using with SSL</a>
+</li>
+            
+<li >
+    <a href="../../Administration-Guide/Appendix-C----Sending-Email-through-IIS/">Sending Email through IIS</a>
+</li>
+            
+<li >
+    <a href="../../Administration-Guide/Appendix-D----Upgrading/">Upgrading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Integrations <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Email</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Email-Integration-Guide/Installing-the-Email-Integration-Service/">Installing</a>
+</li>
+            
+<li >
+    <a href="../../Email-Integration-Guide/Configuring-the-Email-Integration-Service/">Configuring</a>
+</li>
+            
+<li >
+    <a href="../../Email-Integration-Guide/Using-the-Email-Integration-Service-with-KronoDesk/">Using</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Migration</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Migration-and-Integration-Guide/Importing-from-Microsoft-Excel/">Importing from Excel</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+<li>
+  <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+    <i class="fa fa-search"></i>
+  </a>
+</li>
+<li >
+  <a rel="next" href="../User-Profile/" >
+    <i class="fa fa-arrow-left"></i></a>
+</li>
+<li >
+  <a rel="prev" href="../../Quick-Start-Guide/Getting-Started/" ><i
+      class="fa fa-arrow-right"></i></a>
+</li>
+                            <li>
+                                <a href="https://www.inflectra.com">Inflectra</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a
+                href="#reports">Reports</a></li>
+        <li class="second-level"><a href="#ticket-progress-rate">Ticket Progress Rate</a></li>
+        
+        <li class="second-level"><a href="#ticket-cumulative-count">Ticket Cumulative Count</a></li>
+        
+        <li class="second-level"><a href="#ticket-open-count">Ticket Open Count</a></li>
+        
+        <li class="second-level"><a href="#ticket-aging">Ticket Aging</a></li>
+        
+        <li class="second-level"><a href="#ticket-turnaround-time">Ticket Turnaround Time</a></li>
+        
+        <li class="second-level"><a href="#ticket-custom-graphs">Ticket Custom Graphs</a></li>
+        
+        <li class="second-level"><a href="#reports_1">Reports</a></li>
+        
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="reports">Reports</h1>
+<p>This section describes the reporting features of KronoDesk®, including
+an overview of each of the report types that are available. When you
+click on the "Reports" tab on the global navigation bar, you will
+initially be taken to the reports home page illustrated below:</p>
+<p><img alt="" src="../img/Reports_83.png" /></p>
+<p>The Reports page is a dashboard that contains links to a number of
+reports, as well as a set of graphs. By default the dashboard will
+display: the Ticket Progress Rate, Ticket Aging and Ticket Custom
+Graphs.</p>
+<p>Each of the graphs is described in more detail in the sub-sections
+below:</p>
+<h2 id="ticket-progress-rate">Ticket Progress Rate</h2>
+<p>The ticket progress rate chart displays the total number of tickets
+created and closed over a particular date-range, either for all ticket
+types and/or products or for a specific ticket type and/or product:</p>
+<p><img alt="" src="../img/Reports_84.png" /></p>
+<p>In this version of the report, the y-axis represents the number of
+tickets (either created or closed in a 24 hour period), and the x-axis
+represents a specific day in the time-span. Each data-point can be
+viewed by positioning the mouse pointer over the point, and a "tooltip"
+will pop-up listing the actual data value. You can filter the report by
+the type of ticket and/or product, and also change the date range (e.g.
+displaying only the infrastructure tickets for the date range). If you
+choose a smaller date-range, the x-axis will switch from weekly to daily
+and if you choose a larger date-range, the x-axis will switch to
+monthly.</p>
+<p>Clicking on the "Display Data Grid" link will display the underlying
+data that is being used to generate the graph. In addition, clicking on
+the Download Data as CSV link will export the datagrid into Comma
+Separated Values (CSV) format that can be opened in MS-Excel. Some
+browsers also support the ability to save the graph as an image file
+(JPEG, PNG and GIF formats).</p>
+<h2 id="ticket-cumulative-count">Ticket Cumulative Count</h2>
+<p>The cumulative ticket count chart displays the cumulative total number
+of tickets logged in the system over a particular date-range, either for
+all ticket types and/or products or for a specific ticket type and/or
+product. The report displays two data series, one illustrating the total
+count of all ticjets, the other the total count of all <em>open tickets</em>
+(i.e. with status not set to a closed status):</p>
+<p><img alt="" src="../img/Reports_85.png" /></p>
+<p>In this version of the report, the y-axis represents the number of
+tickets, and the x-axis represents a specific week in the time-span.
+Each data-point can be viewed by positioning the mouse pointer over the
+point, and a "tooltip" will pop-up listing the actual data value. You
+can also filter the type of ticket being reported, the product as well
+as change the date interval. If you choose a smaller date-range, the
+x-axis will switch from weekly to daily and if you choose a larger
+date-range, the x-axis will switch to monthly.</p>
+<p>Clicking on the "Display Data Grid" link will display the underlying
+data that is being used to generate the graph. In addition, clicking on
+the Download Data as CSV link will export the datagrid into Comma
+Separated Values (CSV) format that can be opened in MS-Excel. Some
+browsers also support the ability to save the graph as an image file
+(JPEG, PNG and GIF formats).</p>
+<h2 id="ticket-open-count">Ticket Open Count</h2>
+<p>The open ticket count chart displays the net number of open tickets in
+the system over a particular date-range categorized by ticket priority,
+either for all ticket types and/or products or for a specific ticket
+type and/or product:</p>
+<p><img alt="" src="../img/Reports_86.png" /></p>
+<p>In this version of the report, the y-axis represents the number of
+tickets, and the x-axis represents a specific week in the time-span. The
+exact count of each bar in the stacked histogram can be viewed by
+positioning the mouse pointer over the bar, and a "tooltip" will pop-up
+listing the actual data value. You can also filter the type of ticket
+being reported, the product the ticket was reported against, as well as
+change the date interval. If you choose a smaller date-range, the x-axis
+will switch from weekly to daily and if you choose a larger date-range,
+the x-axis will switch to monthly.</p>
+<p>Clicking on the "Display Data Grid" link will display the underlying
+data that is being used to generate the graph. In addition, clicking on
+the Download Data as CSV link will export the datagrid into Comma
+Separated Values (CSV) format that can be opened in MS-Excel. Some
+browsers also support the ability to save the graph as an image file
+(JPEG, PNG and GIF formats).</p>
+<h2 id="ticket-aging">Ticket Aging</h2>
+<p>The ticket aging chart displays the number of days tickets have been
+left open in the system. The chart is organized as a stacked histogram,
+with the count of tickets on the y-axis and different age intervals on
+the x-axis. Each bar-chart color represents a different ticket priority,
+giving an IT service manager a snapshot view of the age of open tickets
+by priority.</p>
+<p><img alt="" src="../img/Reports_87.png" /></p>
+<p>This report can be filtered by the type of ticket and/or product, so for
+example you can see the aging of just support tickets, or just tickets
+for a specific product.</p>
+<p>Clicking on the "Display Data Grid" link will display the underlying
+data that is being used to generate the graph. In addition, clicking on
+the Download Data as CSV link will export the datagrid into Comma
+Separated Values (CSV) format that can be opened in MS-Excel. Some
+browsers also support the ability to save the graph as an image file
+(JPEG, PNG and GIF formats).</p>
+<h2 id="ticket-turnaround-time">Ticket Turnaround Time</h2>
+<p>The incident turnaround time chart displays the number of days incidents
+have taken to be closed (from the time they were first raised) in the
+system. The chart is organized as a stacked histogram, with the count of
+incidents on the y-axis and different turnaround time intervals on the
+x-axis. Each bar-chart color represents a different incident priority,
+giving a project manager a snapshot view of the turnaround time of
+project incidents by priority.</p>
+<p><img alt="" src="../img/Reports_88.png" /></p>
+<p>This report can be filtered by the type of ticket and the product, so
+for example you can see the turnaround time of just infrastructure
+tickets, or just tickets for a specific product.</p>
+<p>Clicking on the "Display Data Grid" link will display the underlying
+data that is being used to generate the graph. In addition, clicking on
+the Download Data as CSV link will export the datagrid into Comma
+Separated Values (CSV) format that can be opened in MS-Excel. Some
+browsers also support the ability to save the graph as an image file
+(JPEG, PNG and GIF formats).</p>
+<h2 id="ticket-custom-graphs">Ticket Custom Graphs</h2>
+<p>The ticket custom graph widget shows how many tickets are currently in
+the system. The number of tickets is displayed according to the criteria
+that you specify. You can specify the type of data displayed along the
+x-axis, and the ticket information that is used to group the data. When
+you first open the graph you will be asked to pick the field that you
+would like to display on the x-axis and the field that you would like to
+group the data by. Once you have chosen the appropriate fields the graph
+will be displayed:</p>
+<p><img alt="" src="../img/Reports_89.png" /></p>
+<p>In the illustration above, the x-axis represents the ticket status, and
+the individual bars are grouped by the priority of the ticket. Each
+data-value can be viewed by positioning the mouse pointer over the bar,
+and a "tooltip" will pop-up listing the actual data value. Clicking on
+the "Display Data Grid" link will display the underlying data that is
+being used to generate the graph. In addition, clicking on the Download
+Data as CSV link will export the datagrid into Comma Separated Values
+(CSV) format that can be opened in MS-Excel. Some browsers also support
+the ability to save the graph as an image file (JPEG, PNG and GIF
+formats).</p>
+<h2 id="reports_1">Reports</h2>
+<p>Kronodesk has nine different reports covering the help desk, knowledge
+base, organizations, and users. Each report can be exported in a number
+of different formats, including PDF, Word, and Excel. Each report can
+also be filtered by a number of different fields and sorted by a
+particular field as well. These features make it easy to quickly
+generate a report to explore a subset of all the data in the system.</p>
+<p>For example, you can create a report showing all tickets in the last six
+months for one product that have been resolved. Below is a report
+configuration page to illustrate the exporting, filtering, and sorting
+options available. Here we are looking at the Ticket Details report.</p>
+<p>To create the report, configure the options as required, then click
+"Create Report". The report will then be dynamically created live. To
+view the report follow the onscreen instructions.</p>
+<p><img alt="" src="../img/Reports_90.png" /></p>
+<p>The first part of the report generated may look something like that
+below in HTML format:</p>
+<p><img alt="" src="../img/Reports_91.png" /></p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+<p>© Copyright 2006-2019 Inflectra Corporation, All Rights Reserved | en-US |</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

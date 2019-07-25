@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="https://kronodoc.inflectra.com/Administration-Guide/Help-Desk-Settings/">
+
+<link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Help Desk Settings - KronoDocs</title>
+<link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+<link href="../../css/font-awesome.min.css" rel="stylesheet">
+<link href="../../css/base.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/base.css">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+<script src="../../js/jquery-1.10.2.min.js" defer></script>
+<script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+<script src="/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+<a class="navbar-brand" href="../..">KronoDocs</a>
+
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../User-Manual/Functionality-Overview/">Functionality Overview</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Home-Page/">Home Page</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Knowledge-Base/">Knowledge Base</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Forums/">Forums</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Help-Desk/">Help Desk</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/User-Profile/">User Profile</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Reports/">Reports</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Getting-Started/">Getting Started</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Using-the-Help-Desk-Ticketing-System/">Using the Help Desk Ticketing System</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Configuring-and-Customizing/">Configuring and Customizing</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Appendix-A--Sample-Users/">Appendix A-Sample Users</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../Installing-KronoDesk/">Installing KronoDesk</a>
+</li>
+                                    
+<li >
+    <a href="../System-Administration/">System Administration</a>
+</li>
+                                    
+<li >
+    <a href="../System-Settings/">System Settings</a>
+</li>
+                                    
+<li >
+    <a href="../Users/">Users</a>
+</li>
+                                    
+<li >
+    <a href="../Forum-Settings/">Forum Settings</a>
+</li>
+                                    
+<li >
+    <a href="../Knowledge-Base-Settings/">Knowledge Base Settings</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Help Desk Settings</a>
+</li>
+                                    
+<li >
+    <a href="../Workflows/">Workflows</a>
+</li>
+                                    
+<li >
+    <a href="../Event-Notifications/">Event Notifications</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Appendices</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../Appendix-A----Troubleshooting/">Troubleshooting</a>
+</li>
+            
+<li >
+    <a href="../Appendix-B----Using-with-SSL/">Using with SSL</a>
+</li>
+            
+<li >
+    <a href="../Appendix-C----Sending-Email-through-IIS/">Sending Email through IIS</a>
+</li>
+            
+<li >
+    <a href="../Appendix-D----Upgrading/">Upgrading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Integrations <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Email</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Email-Integration-Guide/Installing-the-Email-Integration-Service/">Installing</a>
+</li>
+            
+<li >
+    <a href="../../Email-Integration-Guide/Configuring-the-Email-Integration-Service/">Configuring</a>
+</li>
+            
+<li >
+    <a href="../../Email-Integration-Guide/Using-the-Email-Integration-Service-with-KronoDesk/">Using</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Migration</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Migration-and-Integration-Guide/Importing-from-Microsoft-Excel/">Importing from Excel</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+<li>
+  <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+    <i class="fa fa-search"></i>
+  </a>
+</li>
+<li >
+  <a rel="next" href="../Knowledge-Base-Settings/" >
+    <i class="fa fa-arrow-left"></i></a>
+</li>
+<li >
+  <a rel="prev" href="../Workflows/" ><i
+      class="fa fa-arrow-right"></i></a>
+</li>
+                            <li>
+                                <a href="https://www.inflectra.com">Inflectra</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a
+                href="#help-desk-settings">Help Desk Settings</a></li>
+        <li class="second-level"><a href="#custom-fields">Custom Fields</a></li>
+        
+        <li class="second-level"><a href="#ticket-statuses">Ticket Statuses</a></li>
+        
+        <li class="second-level"><a href="#ticket-types">Ticket Types</a></li>
+        
+        <li class="second-level"><a href="#ticket-priorities">Ticket Priorities</a></li>
+        
+        <li class="second-level"><a href="#ticket-resolutions">Ticket Resolutions</a></li>
+        
+        <li class="second-level"><a href="#spira-integration">Spira Integration</a></li>
+        
+        <li class="second-level"><a href="#ticket-article-templates">Ticket Article Templates:</a></li>
+        
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="help-desk-settings">Help Desk Settings</h1>
+<p>This section contains all of the settings that affect the help desk
+ticketing part of the application.</p>
+<h2 id="custom-fields">Custom Fields</h2>
+<p>Tickets in the Help Desk system can have up to 20 custom fields. There
+are different types of custom fields allowed:</p>
+<ul>
+<li>
+<p><strong>Text</strong>: Normal or Rich-Text field.</p>
+</li>
+<li>
+<p><strong>Integer</strong>: Whole-Number entry.</p>
+</li>
+<li>
+<p><strong>Decimal</strong>: Fractional number entry (currency, etc.)</p>
+</li>
+<li>
+<p><strong>Boolean</strong>: Simple yes/no (on/off) checkbox.</p>
+</li>
+<li>
+<p><strong>Date</strong>: Date selector.</p>
+</li>
+<li>
+<p><strong>List</strong>: Custom List selector.</p>
+</li>
+<li>
+<p><strong>Multi-List</strong>: Custom List selector that allows multiple values.</p>
+</li>
+<li>
+<p><strong>User</strong>: List of assignable users.</p>
+</li>
+</ul>
+<p>Each custom field can have optional settings applied to it. Optional
+settings are as follows. (Note that not all settings are available for
+all field types.)</p>
+<ul>
+<li>
+<p><strong>Default</strong>: The default value when a new ticket is opened up.</p>
+</li>
+<li>
+<p><strong>Precision</strong>: How many decimal places is allowed (or the value is
+rounded to).</p>
+</li>
+<li>
+<p><strong>Minimum Value</strong>: The minimum value allowed.</p>
+</li>
+<li>
+<p><strong>Maximum Value</strong>: The maximum value allowed.</p>
+</li>
+<li>
+<p><strong>Minimum Length</strong>: The minimum length of the data required in the
+field.</p>
+</li>
+<li>
+<p><strong>Maximum Length</strong>: The maximum length of the data allowed in the
+field.</p>
+</li>
+<li>
+<p><strong>Rich Text</strong>: Whether or not the text field allows HTML or not.</p>
+</li>
+<li>
+<p><strong>Custom List</strong>: The defined Custom List for the field that users
+can select from.</p>
+</li>
+</ul>
+<p>Going to the main page, you will see a list of custom field defined for
+Tickets:</p>
+<p><img alt="" src="../img/Help_Desk_Settings_48.png" /></p>
+<p>To edit a definition, click the Edit Definition link on a field, and you
+will get a popup:</p>
+<p><img alt="" src="../img/Help_Desk_Settings_49.png" /></p>
+<p>The fields visible will vary depending on the type of custom field you
+have selected, but every custom field will need to have an Alias and a
+Type. The Alias is what is shown to the user when viewing or editing the
+ticket. The type is the type of data the ticket allows.</p>
+<p>Under the Options tab will be available options that can be set for the
+custom field.</p>
+<p>When finished, click the 'Save' button and you will be returned to the
+Custom Field list.</p>
+<p><strong><em>Important Note:</em></strong> When changing a custom field's type or removing a
+field, the data is not actually removed from the ticket. Therefore, if
+you change a custom field of a date into a text, the field will display
+the old date value until it is changed by the user.</p>
+<h2 id="ticket-statuses">Ticket Statuses</h2>
+<p>Ticket statuses can be edited using the grid that displays all defined
+statuses.</p>
+<p><img alt="" src="../img/Help_Desk_Settings_50.png" /></p>
+<p>All statuses must have a display name, which is viewed by the user
+editing or viewing the ticket. The other fields are:</p>
+<ul>
+<li>
+<p><strong>Closed for Internal?</strong> - Whether this status is considered as
+inactive for internal users (employees, support agents, etc.). For
+example the sample status 'Waiting on Customer' would be considered
+'Closed for Internal' because customer support agents do not want to
+see such tickets in their list when it's waiting for a customer to
+respond.</p>
+</li>
+<li>
+<p><strong>Closed for External</strong> - Whether this status is considered as
+inactive for external users (customers, etc.). For example the
+sample status 'Waiting on Customer' would be considered 'Open for
+External' because end users / customers would definitely want to see
+such tickets in their list since the support agent is waiting for
+their response.</p>
+</li>
+<li>
+<p><strong>Default?</strong> - The status selected as the default is the status that
+new tickets are opened as.</p>
+</li>
+</ul>
+<p>To add a new Status, click the Add New Status link -- a new row will be
+inserted into the table where you can save the new status.</p>
+<p>To remove a status, click the Remove link. Any tickets with a status
+that has been removed will stay that status, until the next time a user
+edits the ticket.</p>
+<p>In addition to this screen that lets you edit the ticket statuses, if
+you click on the "Advanced" option in the left hand navigation, it will
+bring up the screen that lets you specify some additional status change
+rules:</p>
+<p><img alt="" src="../img/Help_Desk_Settings_51.png" /></p>
+<p>There are several options you can configure:</p>
+<ul>
+<li>
+<p><strong>The Default Open Status</strong> -- this allows you to specify the status
+that a ticket will be automatically switched to when a new note is
+added by the person who originally opened the ticket. This is useful
+when a customer accesses one of their existing tickets that's in a
+closed status but forgets to change the status back to an open
+status. This ensures that such tickets do not get forgotten about.</p>
+</li>
+<li>
+<p><strong>The Default Assigned Status</strong> -- this allows you to specify the
+status that a ticket will be automatically switched to when you use
+the bulk assign tools on the main Help Desk page. For example five
+new tickets arrive and you select them and choose the option to
+"Assign Tickets to Me". When they are assigned in this way, the
+system will automatically change their status to the default
+assigned status option (if specified).</p>
+</li>
+<li>
+<p><strong>Closed Status</strong> -- After a set amount of time, an open ticket can
+be automatically closed. This will only happen if a ticket is set to
+a status that is not open for internal (customer service), but is
+open externally (for customers). The dropdown list contains the
+status that the ticket will be switched to.</p>
+</li>
+<li>
+<p><strong>Age of Ticket</strong> - Allowable values: 7-365. After the ticket is
+this number of days old, the status will be automatically
+closed.</p>
+</li>
+</ul>
+<h2 id="ticket-types">Ticket Types</h2>
+<p>The Ticket Type page defines values allowed for the standard Type field
+for tickets. Types must have a unique display name, which is what the
+user sees when they view or edit a type.</p>
+<p><img alt="" src="../img/Help_Desk_Settings_52.png" /></p>
+<p>To add a new type, click the Add New Type link, and fill out the new
+empty row.</p>
+<p>To remove a type, click the Remove button to the right of the defined
+type. Note that any tickets assigned to a type that is removed will
+retain their type, until the next time a user tries to edit the ticket.</p>
+<h2 id="ticket-priorities">Ticket Priorities</h2>
+<p>The Ticket Priorities page defines values allowed for the standard
+Priority field. Like types, priorities must have a unique name.</p>
+<p><img alt="" src="../img/Help_Desk_Settings_53.png" /></p>
+<p>To add a new priority, click the Add New Priority link, and fill out the
+new empty row.</p>
+<p>To remove a priority, click the Remove button to the right of the
+priority. Note that any tickets assigned to a priority that is removed
+will retain their value, until the next time a user tries to edit the
+ticket. Colors assigned to the priority will appear in the Ticket List
+page in the Priority column.</p>
+<h2 id="ticket-resolutions">Ticket Resolutions</h2>
+<p><img alt="" src="../img/Help_Desk_Settings_54.png" /></p>
+<p>The Ticket Resolutions page defines values allowed for the standard
+Resolution field. Like types and priorities, resolutions must have a
+unique name. The description is used internally, and should just contain
+a short summary of the meaning of the resolution.</p>
+<p>To add a new resolution, click the Add New Resolution link, and fill out
+the new empty row.</p>
+<p>To remove a resolution, click the Remove button to the right of the
+resolution. Note that any tickets assigned to a resolution that is
+removed will retain their value, until the next time a user tries to
+edit the ticket.</p>
+<h2 id="spira-integration">Spira Integration</h2>
+<p>When customer support agents work on tickets received from customers,
+they may find that the issue is actually a product defect rather than a
+customer support matter. In which case, they can take advantage of the
+built-in integration with <a href="http://inflectra.com/SpiraTeam">SpiraTeam</a>® -
+Inflectra's award winning Application Lifecycle Management (ALM)
+solution that has a powerful product incident management system.</p>
+<p>KronoDesk® has the ability to connect to an instance of SpiraTeam® and
+add new product incidents into the system that are linked to the
+originating KronoDesk Ticket. That allows customer service agents to
+monitor the status of the associated product incidents and inform
+customers when the appropriate patches or fixes are available to correct
+the problem.</p>
+<p>This screen allows the administrator to setup the connection between
+SpiraTeam and KronoDesk.</p>
+<p><img alt="" src="../img/Help_Desk_Settings_55.png" /></p>
+<p>You should enter the URL that your users use to access their instance of
+SpiraTest, SpiraPlan or SpiraTeam (including the HTTP or HTTPS prefix)
+together with the SpiraTeam login and RSS Token for a valid SpiraTeam
+user. The login and associated RSS Token is used to verify the
+connection.</p>
+<p>Once you have entered the information, you should click the [Test]
+button to verify that the URL is accessible. If there are connectivity
+issues, and error will be displayed, otherwise a green confirmation
+message will appear. Once the connection information has been
+successfully verified, you need to click the [Save] button to save the
+connection settings in the system.</p>
+<h2 id="ticket-article-templates">Ticket Article Templates:</h2>
+<p>Templates can be created for quick replies to support tickets. This
+allows for support agents to quickly respond to support tickets
+referencing a related KB Article.</p>
+<p><img alt="" src="../img/Help_Desk_Settings_56.png" /></p>
+<p>You can edit or create a new template, and to reference the selected KB
+Article, you can use a set of templates, available in the (<strong>[T]</strong>)
+toolbar button. The support agent can then select one of these templates
+on the Ticket Details page, along with a KB article to insert into the
+agent's reply.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+<p>© Copyright 2006-2019 Inflectra Corporation, All Rights Reserved | en-US |</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

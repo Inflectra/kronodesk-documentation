@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="https://kronodoc.inflectra.com/Administration-Guide/Workflows/">
+
+<link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Workflows - KronoDocs</title>
+<link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+<link href="../../css/font-awesome.min.css" rel="stylesheet">
+<link href="../../css/base.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/base.css">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+<script src="../../js/jquery-1.10.2.min.js" defer></script>
+<script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+<script src="/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+<a class="navbar-brand" href="../..">KronoDocs</a>
+
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../User-Manual/Functionality-Overview/">Functionality Overview</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Home-Page/">Home Page</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Knowledge-Base/">Knowledge Base</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Forums/">Forums</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Help-Desk/">Help Desk</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/User-Profile/">User Profile</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Reports/">Reports</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Getting-Started/">Getting Started</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Using-the-Help-Desk-Ticketing-System/">Using the Help Desk Ticketing System</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Configuring-and-Customizing/">Configuring and Customizing</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Appendix-A--Sample-Users/">Appendix A-Sample Users</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../Installing-KronoDesk/">Installing KronoDesk</a>
+</li>
+                                    
+<li >
+    <a href="../System-Administration/">System Administration</a>
+</li>
+                                    
+<li >
+    <a href="../System-Settings/">System Settings</a>
+</li>
+                                    
+<li >
+    <a href="../Users/">Users</a>
+</li>
+                                    
+<li >
+    <a href="../Forum-Settings/">Forum Settings</a>
+</li>
+                                    
+<li >
+    <a href="../Knowledge-Base-Settings/">Knowledge Base Settings</a>
+</li>
+                                    
+<li >
+    <a href="../Help-Desk-Settings/">Help Desk Settings</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Workflows</a>
+</li>
+                                    
+<li >
+    <a href="../Event-Notifications/">Event Notifications</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Appendices</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../Appendix-A----Troubleshooting/">Troubleshooting</a>
+</li>
+            
+<li >
+    <a href="../Appendix-B----Using-with-SSL/">Using with SSL</a>
+</li>
+            
+<li >
+    <a href="../Appendix-C----Sending-Email-through-IIS/">Sending Email through IIS</a>
+</li>
+            
+<li >
+    <a href="../Appendix-D----Upgrading/">Upgrading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Integrations <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Email</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Email-Integration-Guide/Installing-the-Email-Integration-Service/">Installing</a>
+</li>
+            
+<li >
+    <a href="../../Email-Integration-Guide/Configuring-the-Email-Integration-Service/">Configuring</a>
+</li>
+            
+<li >
+    <a href="../../Email-Integration-Guide/Using-the-Email-Integration-Service-with-KronoDesk/">Using</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Migration</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Migration-and-Integration-Guide/Importing-from-Microsoft-Excel/">Importing from Excel</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+<li>
+  <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+    <i class="fa fa-search"></i>
+  </a>
+</li>
+<li >
+  <a rel="next" href="../Help-Desk-Settings/" >
+    <i class="fa fa-arrow-left"></i></a>
+</li>
+<li >
+  <a rel="prev" href="../Event-Notifications/" ><i
+      class="fa fa-arrow-right"></i></a>
+</li>
+                            <li>
+                                <a href="https://www.inflectra.com">Inflectra</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a
+                href="#workflows">Workflows</a></li>
+        <li class="second-level"><a href="#edit-workflow-details">Edit Workflow Details</a></li>
+        
+        <li class="second-level"><a href="#edit-workflow-transition">Edit Workflow Transition</a></li>
+        
+        <li class="second-level"><a href="#edit-workflow-step">Edit Workflow Step</a></li>
+        
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="workflows">Workflows</h1>
+<p>This section displays a list of the defined ticket workflows in the
+system. A workflow is a predefined sequence of ticket statuses linked
+together by "workflow transitions" to enable a newly created ticket to
+be reviewed, prioritized, assigned, resolved and closed, as well as to
+handle exception cases such as the case of a duplicate or
+non-reproducible ticket. The initial workflow list screen when you first
+use the system is illustrated below:</p>
+<p><img alt="" src="../img/Workflows_57.png" /></p>
+<p>To modify the name, default status, and/or active flags, simply change
+the values in the appropriate text-box, radio-button or drop-down list
+and click the [Save] button. To add a new workflow, simply click the
+[Add Workflow] button and a new workflow will be created with the
+standard KronoDesk steps and transitions.</p>
+<p>You can have as many workflows as you like in a project, but only one
+can be marked as the default. Each KronoDesk product is assigned to a
+workflow; this allows you to have support tickets for different products
+follow different paths from creation to closure. However when a new
+product is created, it will be initially associated with the default
+workflow. The steps and transitions that make up the default workflow
+are illustrated in the diagram below:</p>
+<p><img alt="" src="../img/Workflows_58.png" /></p>
+<p>Note: You can only assign an active workflow to a KronoDesk product, and
+similarly you cannot make a workflow inactive that is currently linked
+to at least one product. This is important as all products need to be
+linked to an active workflow at all times.</p>
+<h2 id="edit-workflow-details">Edit Workflow Details</h2>
+<p>Clicking on the &lt;Steps> button of an inactive workflow brings up the
+following screen that lists all the workflow steps and workflow
+transitions that comprise the workflow:</p>
+<p><img alt="" src="../img/Workflows_59.png" /></p>
+<p>This page lists in the left-most column all the various incident
+statuses defined in the system. The next column lists all the possible
+transitions that can occur <em>from that status</em>. In addition, with each
+transition is listed the name of the resulting <em>destination status</em> that
+the transition leads to. E.g. from the assigned status, depending on
+your role (see later) you can move the ticket to either Open, Waiting On
+Customer, Waiting on Development, Duplicate and Non-Issue depending on
+which transition the user takes.</p>
+<p>Clicking on the name of a step or transition takes you to the
+appropriate details page (see below) where you can set the properties of
+the step or transition respectively. To delete an existing transition,
+simply click the &lt;Delete> button after the transition name, and to add
+a new transition, click the &lt;Add Transition> button in the Operations
+column.</p>
+<h2 id="edit-workflow-transition">Edit Workflow Transition</h2>
+<p>When you click on the transition name link from the previous screen, you
+are taken to the workflow transition details screen:</p>
+<p><img alt="" src="../img/Workflows_60.png" /></p>
+<p>The top part of the screen is the "workflow browser" which illustrates
+how the transition relates to the workflow as a whole. It displays the
+current transition in the middle, with the originating and destination
+steps listed to either side. Clicking on either ticket status name will
+take you to the appropriate workflow step details page. This allows you
+to click through the whole workflow from start to finish without having
+to return to the workflow details page.</p>
+<p>Each transition has a series of conditions which need to be satisfied
+for a user to actually execute the transition (i.e. move the ticket from
+the originating status to the destination status). The conditions allow
+you to set three types of user role:</p>
+<ul>
+<li>
+<p>The opener of the ticket can be allowed to execute the transition when
+the transition occurs. For example, when a ticket is marked as Waiting
+on Customer, the opener should be the only one who's allowed to move it
+to Closed.</p>
+</li>
+<li>
+<p>The assignee of the ticket can be allowed to execute the transition when
+the transition occurs. For example, when a ticket is marked as Assigned,
+the assigned agent should be the only one who's allowed to move it to
+Waiting on Customer.</p>
+</li>
+<li>
+<p>A user with a specified role can be allowed to execute the transition,
+when the transition occurs regardless of whether they are the opener or
+assignee. For example a user with role "Manager" might want the power to
+close all tickets regardless of assignee status.</p>
+</li>
+<li>
+<p>Whether a Digital Signature is required for this transition or not. If
+set to Yes, then when the transition is performed, the user must
+re-enter their username, password, and a note (if applicable) on the
+transition. This signature is recorded in the History for future
+reporting.</p>
+</li>
+</ul>
+<p>You can set any of these conditions by changing the drop-down list
+and/or check-boxes and clicking the appropriate &lt;Save> button.</p>
+<h2 id="edit-workflow-step">Edit Workflow Step</h2>
+<p>When you click on the ticket status name link from either of the
+previous screens, you are taken to the workflow step details screen:</p>
+<p><img alt="" src="../img/Workflows_61.png" /></p>
+<p>The top part of the screen is the "workflow browser" which illustrates
+how the step relates to the workflow as a whole. It displays the current
+ticket status in the middle, with the possible originating and
+destination transitions listed to either side. Clicking on either
+workflow transition name will take you to the appropriate workflow
+transition details page. This allows you to click through the whole
+workflow from start to finish without having to return to the workflow
+details page.</p>
+<p>This page allows you to define the behavior of the various ticket fields
+(i.e. those that are a standard part of KronoDesk such as Priority) and
+ticket custom properties for this particular step in the workflow. You
+can set each of the fields/custom properties as being hidden, disabled,
+and/or required for each step in the workflow, and for Internal
+(support) users, and External (end-user) users. Note that you cannot set
+a field/property as being required and disabled since this would prevent
+a user from ever updating the ticket. For example, when a ticket is in
+the Open status, you might make the assignee field inactive (since the
+opener shouldn't need to know who will ultimately work on it), when it
+gets to the Assigned status, you might make the field enabled and
+required. This allows you to tailor the information gathered to the
+appropriate place in the workflow.</p>
+<p>To actually make these changes, all you need to do is select the
+appropriate checkboxes in the list of fields and custom properties and
+click the corresponding &lt;Save> button.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+<p>© Copyright 2006-2019 Inflectra Corporation, All Rights Reserved | en-US |</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

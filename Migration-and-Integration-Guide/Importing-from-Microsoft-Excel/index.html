@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="https://kronodoc.inflectra.com/Migration-and-Integration-Guide/Importing-from-Microsoft-Excel/">
+
+<link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Importing from Excel - KronoDocs</title>
+<link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+<link href="../../css/font-awesome.min.css" rel="stylesheet">
+<link href="../../css/base.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/base.css">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+<script src="../../js/jquery-1.10.2.min.js" defer></script>
+<script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+<script src="/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+<a class="navbar-brand" href="../..">KronoDocs</a>
+
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../User-Manual/Functionality-Overview/">Functionality Overview</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Home-Page/">Home Page</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Knowledge-Base/">Knowledge Base</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Forums/">Forums</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Help-Desk/">Help Desk</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/User-Profile/">User Profile</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Reports/">Reports</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Getting-Started/">Getting Started</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Using-the-Help-Desk-Ticketing-System/">Using the Help Desk Ticketing System</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Configuring-and-Customizing/">Configuring and Customizing</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Appendix-A--Sample-Users/">Appendix A-Sample Users</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Administration-Guide/Installing-KronoDesk/">Installing KronoDesk</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/System-Administration/">System Administration</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/System-Settings/">System Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Users/">Users</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Forum-Settings/">Forum Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Knowledge-Base-Settings/">Knowledge Base Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Help-Desk-Settings/">Help Desk Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Workflows/">Workflows</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Event-Notifications/">Event Notifications</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Appendices</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Administration-Guide/Appendix-A----Troubleshooting/">Troubleshooting</a>
+</li>
+            
+<li >
+    <a href="../../Administration-Guide/Appendix-B----Using-with-SSL/">Using with SSL</a>
+</li>
+            
+<li >
+    <a href="../../Administration-Guide/Appendix-C----Sending-Email-through-IIS/">Sending Email through IIS</a>
+</li>
+            
+<li >
+    <a href="../../Administration-Guide/Appendix-D----Upgrading/">Upgrading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Integrations <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Email</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Email-Integration-Guide/Installing-the-Email-Integration-Service/">Installing</a>
+</li>
+            
+<li >
+    <a href="../../Email-Integration-Guide/Configuring-the-Email-Integration-Service/">Configuring</a>
+</li>
+            
+<li >
+    <a href="../../Email-Integration-Guide/Using-the-Email-Integration-Service-with-KronoDesk/">Using</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Migration</a>
+    <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="./">Importing from Excel</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+<li>
+  <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+    <i class="fa fa-search"></i>
+  </a>
+</li>
+<li >
+  <a rel="next" href="../../Email-Integration-Guide/Using-the-Email-Integration-Service-with-KronoDesk/" >
+    <i class="fa fa-arrow-left"></i></a>
+</li>
+<li class="disabled" >
+  <a rel="prev" ><i
+      class="fa fa-arrow-right"></i></a>
+</li>
+                            <li>
+                                <a href="https://www.inflectra.com">Inflectra</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a
+                href="#importing-from-microsoft-excel">Importing from Microsoft Excel</a></li>
+        <li class="second-level"><a href="#installing-the-microsoft-excel-add-in">Installing the Microsoft Excel Add-In</a></li>
+        
+        <li class="second-level"><a href="#connecting-to-kronodesk">Connecting to KronoDesk®</a></li>
+        
+        <li class="second-level"><a href="#choosing-the-artifact-type">Choosing the Artifact Type</a></li>
+        
+        <li class="second-level"><a href="#exporting-data">Exporting Data</a></li>
+        
+        <li class="third-level"><a href="#configuring-the-lookups">Configuring the Lookups</a></li>
+        <li class="third-level"><a href="#exporting-tickets">Exporting Tickets</a></li>
+        <li class="second-level"><a href="#changing-the-importexport-options">Changing the Import/Export Options</a></li>
+        
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="importing-from-microsoft-excel">Importing from Microsoft Excel</h1>
+<p>The web-based interface of KronoDesk® is ideal for managing your
+company's support desk. However when first standing up the system, you
+may have legacy help desk tickets already in another system or in an
+Microsoft Office document (e.g. Excel), it is useful to be able to load
+in a batch of such legacy help desk tickets, rather than having to
+manually enter them one at a time.</p>
+<p>To simplify this task, KronoDesk® comes with a Microsoft Excel Add-In
+that can export help desk tickets from a populated Excel sheet into
+KronoDesk®.</p>
+<h2 id="installing-the-microsoft-excel-add-in">Installing the Microsoft Excel Add-In</h2>
+<p>The first thing you need to do is to go to the KronoDesk "Add-Ons and
+Downloads" page of the Inflectra Website (it can be found in the
+KronoDesk section), and download the <strong>MS-Office Add-Ins</strong> installation
+package:</p>
+<blockquote>
+<p><strong>MS-Office 2010 Add-Ins</strong> -- these are compatible with Microsoft Office
+2010 and 2013. They can connect to KronoDesk v1.1 or later. They also
+require Microsoft .NET 4.0.</p>
+</blockquote>
+<p>This installation package will install the add-ins for Microsoft Excel
+onto your local PC You can connect to either a cloud-hosted or
+on-premise version of KronoDesk. If you don't have the correct version
+of Microsoft .NET installed or some of the necessary prerequisites, you
+will be given the opportunity to install them when you first run the
+installation package.</p>
+<p>Once you have the Excel Add-In installed, the second thing you'll need
+to download is the <strong>KronoDeskImportTemplate</strong> Excel Sheet. This
+spreadsheet contains the necessary pre-formatted columns that are needed
+for the Add-In to easily recognize the data and know how to handle it.</p>
+<p>Once you have downloaded the template, please double-click on it to open
+it up in MS-Excel. You will notice that there is an additional ribbon
+entry under the "Add-Ins" tab in Excel which is used for
+importing/exporting data to/from KronoDesk:</p>
+<p><img alt="" src="../img/Importing_from_Microsoft_Excel_3.png" /></p>
+<p>This ribbon allow you to connect to KronoDesk, and perform the
+import/export. The process for using this toolbar is described below:</p>
+<h2 id="connecting-to-kronodesk">Connecting to KronoDesk®</h2>
+<p>The first thing you need to do is to click on the [Connect] button to
+specify the information used to connect to your instance of KronoDesk:</p>
+<p><img alt="" src="../img/Importing_from_Microsoft_Excel_4.png" /></p>
+<p>Please enter the following information into the dialog box:</p>
+<ul>
+<li>
+<p><strong>KronoDesk URL:</strong> Please enter the web address that you use to
+access KronoDesk® in your browser. This is usually of the form
+<a href="http://hostname/KronoDesk">http://hostname/KronoDesk</a> or <a href="https://mycompany.kronodesk.net">https://mycompany.kronodesk.net</a>.
+Make sure that you remove any suffixes from the address (e.g.
+Default.aspx).</p>
+</li>
+<li>
+<p><strong>User Name:</strong> Please enter the username that you use for logging in
+to KronoDesk</p>
+</li>
+<li>
+<p><strong>Password:</strong> Please enter the password that you use for logging in
+to KronoDesk</p>
+</li>
+<li>
+<p><strong>Remember Password:</strong> If you are using this Add-In on a private
+computer, you can check this option to have the system remember your
+credentials locally. Please do not use this option on a public
+computer and it will compromise the security of your KronoDesk
+installation.</p>
+</li>
+</ul>
+<p>Once you have entered the necessary information, please click
+[Connect] to authenticate with the server. If the login information is
+invalid, you will see an error message appear, otherwise you will be
+connected and the list of projects and artifacts will be populated. If
+you want to end your session, you should just click the [Disconnect]
+button and the Add-In will close your connection.</p>
+<h2 id="choosing-the-artifact-type">Choosing the Artifact Type</h2>
+<p>Once you have successfully connected to KronoDesk, you should now choose
+the appropriate Artifact in the system that you will be importing /
+exporting (<em>currently only Tickets are supported</em>):</p>
+<p><img alt="" src="../img/Importing_from_Microsoft_Excel_5.png" /></p>
+<p>The artifact choice will match the name of the Excel sheet in the
+template, so if you are going to be exporting Tickets, you should choose
+"Tickets" from the dropdown list and then click on the "Tickets" tab
+inside the Excel import template.</p>
+<p>Once you have selected the artifact, there are three buttons that you
+can now use:</p>
+<ul>
+<li>
+<p><strong>Export:</strong> Clicking this button will take the data in the
+spreadsheet and use it to add/update items in KronoDesk.</p>
+</li>
+<li>
+<p><strong>Import:</strong> Clicking this button will retrieve the data from the
+KronoDesk server and use that to populate the spreadsheet. [This is
+currently not available in the Add-In]</p>
+</li>
+<li>
+<p><strong>Clear:</strong> This button allows you to quickly clear the data in the
+import template while leaving all the necessary headings and other
+information that the Add-In needs to be able to import/export data.</p>
+</li>
+<li>
+<p><strong>Options:</strong> This button allows you to change some of the
+import/export options.</p>
+</li>
+</ul>
+<h2 id="exporting-data">Exporting Data</h2>
+<p>The Excel Add-In is capable of exporting help desk ticket data from the
+Excel template to KronoDesk.</p>
+<h3 id="configuring-the-lookups">Configuring the Lookups</h3>
+<p>The Excel template contains a special 'Lookups' sheet in the Excel
+workbook. Before actually performing the export, you should review this
+sheet to make sure the list of products, statuses, priorities and
+resolutions match your instance of KronoDesk:</p>
+<p><img alt="" src="../img/Importing_from_Microsoft_Excel_6.png" /></p>
+<p>Normally you would need to change at least the list of Products (since
+it will have the three sample products by default) and depending on how
+you have customized your instance, you will also need to adjust the
+statuses, priorities and resolutions (currently Type is not used and can
+be ignored).</p>
+<p>To get the appropriate list of products, statuses, priorities and
+resolutions, go to the Administration section of KronoDesk and display
+the appropriate screens. For example, for products:</p>
+<p><img alt="" src="../img/Importing_from_Microsoft_Excel_7.png" /></p>
+<p>Make sure that the products, statuses, priorities and resolutions in the
+Excel workbook match the ID and the value displayed in KronoDesk. Once
+that has been done, you are now ready to export your data.</p>
+<h3 id="exporting-tickets">Exporting Tickets</h3>
+<p>To export tickets, first you need to click on the "Tickets" sheet in the
+Excel workbook:</p>
+<p><img alt="" src="../img/Importing_from_Microsoft_Excel_8.png" /></p>
+<p>Next you should click on the [Clear] icon to first remove the sample
+information from the spreadsheet. Once you have the sheet ready for
+export, you need to either enter the tickets into this specially
+formatted spreadsheet or cut and paste them in from another existing
+Excel sheet that you've been using to manage tickets previously (or from
+the output of another tool). Then click [Export] and the new items
+will be added to your instance of KronoDesk.</p>
+<p>The various columns that can be imported/exported, and the rules for
+entering data are listed below:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tkt #</td>
+<td>Stores the ID of the ticket. Should be left blank for new items being added to KronoDesk</td>
+</tr>
+<tr>
+<td><strong>Ticket Subject</strong></td>
+<td>The subject / name of the help desk ticket.</td>
+</tr>
+<tr>
+<td><strong>Ticket Description</strong></td>
+<td>The long description of the ticket. If you want it formatted, you need to add HTML tags such as &lt;b> for bold</td>
+</tr>
+<tr>
+<td><strong>Product</strong></td>
+<td>The name of the KronoDesk product that you want to associate the ticket with. It needs to be one of the values from the dropdown list.</td>
+</tr>
+<tr>
+<td><strong>Status</strong></td>
+<td>The status of the ticket. It needs to be one of the values from the dropdown list.</td>
+</tr>
+<tr>
+<td>Priority</td>
+<td>The priority of the ticket. It needs to be one of the values from the dropdown list.</td>
+</tr>
+<tr>
+<td>Resolution</td>
+<td>The resolution of the ticket. It needs to be one of the values from the dropdown list.</td>
+</tr>
+<tr>
+<td>Opener</td>
+<td>The user that opened the ticket. Needs to be the ID of the user (e.g. user US00005 would be entered as just 5). If left blank, it will default to the user logged in through the Add-In.</td>
+</tr>
+<tr>
+<td>Assignee</td>
+<td>The internal user that the ticket should be assigned to Needs to be the ID of the user (e.g. user US00005 would be entered as just 5)</td>
+</tr>
+<tr>
+<td>Creation Date</td>
+<td>The date that the ticket was logged. If this field is not populated, the current date is used instead</td>
+</tr>
+<tr>
+<td>Closed Date</td>
+<td>The date that the ticket was closed. Do not enter a value in this field if the ticket is not in a closed status.</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>The description of a comment/note that should be appended to the ticket. If you want it formatted, you need to add HTML tags such as &lt;b> for bold. <em>Note that this field always appends, so if you want to add two comments, just enter the first value and click [Export], then replace it with the second value and click [Export]</em></td>
+</tr>
+</tbody>
+</table>
+<p>Note: the columns that are required are listed in <strong>bold</strong> type.</p>
+<h2 id="changing-the-importexport-options">Changing the Import/Export Options</h2>
+<p>You can change how the import/export works by clicking on the Options
+icon. This brings up the Options dialog box:</p>
+<p><img alt="" src="../img/Importing_from_Microsoft_Excel_9.png" /></p>
+<p>When you import artifacts from KronoDesk into MS-Excel, if they have a
+formatted description, by default all the HTML tags that are used to
+describe the formatting will be loaded into the Excel cell. This is
+useful if you plan on making changes and then updating KronoDesk (since
+it will preserve the formatting).</p>
+<p>However if you want to be able to more easily read the descriptions in
+Excel and do not plan on updating KronoDesk, you can select the option
+to Remove the Formatting, which will convert the descriptions to
+plain-text before loading them into Excel.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+<p>© Copyright 2006-2019 Inflectra Corporation, All Rights Reserved | en-US |</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

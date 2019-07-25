@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="https://kronodoc.inflectra.com/Email-Integration-Guide/Using-the-Email-Integration-Service-with-KronoDesk/">
+
+<link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Using - KronoDocs</title>
+<link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+<link href="../../css/font-awesome.min.css" rel="stylesheet">
+<link href="../../css/base.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/base.css">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+<script src="../../js/jquery-1.10.2.min.js" defer></script>
+<script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+<script src="/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+<a class="navbar-brand" href="../..">KronoDocs</a>
+
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../User-Manual/Functionality-Overview/">Functionality Overview</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Home-Page/">Home Page</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Knowledge-Base/">Knowledge Base</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Forums/">Forums</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Help-Desk/">Help Desk</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/User-Profile/">User Profile</a>
+</li>
+                                    
+<li >
+    <a href="../../User-Manual/Reports/">Reports</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Getting-Started/">Getting Started</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Using-the-Help-Desk-Ticketing-System/">Using the Help Desk Ticketing System</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Configuring-and-Customizing/">Configuring and Customizing</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Appendix-A--Sample-Users/">Appendix A-Sample Users</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Administration-Guide/Installing-KronoDesk/">Installing KronoDesk</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/System-Administration/">System Administration</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/System-Settings/">System Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Users/">Users</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Forum-Settings/">Forum Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Knowledge-Base-Settings/">Knowledge Base Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Help-Desk-Settings/">Help Desk Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Workflows/">Workflows</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Event-Notifications/">Event Notifications</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Appendices</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Administration-Guide/Appendix-A----Troubleshooting/">Troubleshooting</a>
+</li>
+            
+<li >
+    <a href="../../Administration-Guide/Appendix-B----Using-with-SSL/">Using with SSL</a>
+</li>
+            
+<li >
+    <a href="../../Administration-Guide/Appendix-C----Sending-Email-through-IIS/">Sending Email through IIS</a>
+</li>
+            
+<li >
+    <a href="../../Administration-Guide/Appendix-D----Upgrading/">Upgrading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Integrations <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Email</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../Installing-the-Email-Integration-Service/">Installing</a>
+</li>
+            
+<li >
+    <a href="../Configuring-the-Email-Integration-Service/">Configuring</a>
+</li>
+            
+<li class="active">
+    <a href="./">Using</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Migration</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Migration-and-Integration-Guide/Importing-from-Microsoft-Excel/">Importing from Excel</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+<li>
+  <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+    <i class="fa fa-search"></i>
+  </a>
+</li>
+<li >
+  <a rel="next" href="../Configuring-the-Email-Integration-Service/" >
+    <i class="fa fa-arrow-left"></i></a>
+</li>
+<li >
+  <a rel="prev" href="../../Migration-and-Integration-Guide/Importing-from-Microsoft-Excel/" ><i
+      class="fa fa-arrow-right"></i></a>
+</li>
+                            <li>
+                                <a href="https://www.inflectra.com">Inflectra</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a
+                href="#using-the-email-integration-service-with-kronodesk">Using the Email Integration Service with KronoDesk</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="using-the-email-integration-service-with-kronodesk">Using the Email Integration Service with KronoDesk</h1>
+<p>Once you have the email integration service configured, we recommend
+that you initially clear the Windows Application Log on the machine.
+This will allow you to quickly see any errors that occur due to
+misconfiguration. The event viewer can be found in Control Panel >
+Administrative Tools > Event Viewer.</p>
+<p>Once you have the email integration enabled and running, any users that
+email in a support ticket to one of the "watched" email addresses will
+experience the following process:</p>
+<ol>
+<li>
+<p>The customer emails <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#109;&#121;&#99;&#111;&#109;&#112;&#97;&#110;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#109;&#121;&#99;&#111;&#109;&#112;&#97;&#110;&#121;&#46;&#99;&#111;&#109;</a> with a help desk
+request.</p>
+</li>
+<li>
+<p>The contents (including attachments) of the email will be parsed by
+the email integration service and a new help desk ticket will be
+created in KronoDesk.</p>
+</li>
+<li>
+<p>The customer will receive an automated email from the system letting
+them know that the ticket was received:</p>
+</li>
+</ol>
+<blockquote>
+<p>------=> Please keep your reply above this line. &lt;=-</p>
+<p>Hello Fred Bloggs</p>
+<p>The following ticket in My Company support system has been recently
+updated:</p>
+<p>Name: #TK438 - test 123</p>
+<p>Priority:</p>
+<p>Status: Open</p>
+<p>Product: Product 1</p>
+<p>Type:</p>
+<p>Assignee:</p>
+<p>Last Updated: 10/19/2012 4:29:37 PM</p>
+<p>To view the ticket, click the URL below:</p>
+<p><a href="http://mycompany.kronodesk.net/Ticket/438.aspx">http://mycompany.kronodesk.net/Ticket/438.aspx</a></p>
+</blockquote>
+<ol>
+<li>
+<p>If this is the first time the user has ever submitted a help desk
+ticket, the system will also create a new <strong>unverified</strong> user
+account in KronoDesk on behalf of this user.</p>
+</li>
+<li>
+<p>The user will then receive a separate email with information
+about their new account. It will provide a hyperlink that allows
+them to "verify" this new user account so that they can
+view/modify their help desk tickets through the website.</p>
+</li>
+<li>
+<p>If the user clicks on this verify link, they will be taken to
+KronoDesk, where they will have the option of providing a
+password and other security information that will allow them to
+access the support system through the website. If they don't
+verify the account, they can still respond to the ticket through
+email.</p>
+</li>
+<li>
+<p>The customer service manager(s) will assign the ticket to the
+appropriate customer service agent and the assigned agent will add
+information to the ticket either providing a possible solution to
+the enquiry or requesting additional information.</p>
+</li>
+<li>
+<p>In either case, the customer will receive an email containing
+the note(s) from the customer service agent.</p>
+</li>
+<li>
+<p>The customer can either verify their account and reply to the agent
+through the KronoDesk web interface, or they can simply reply to the
+email notifications, making sure that their comments are <strong>above the
+special line marked "please reply above this line"</strong>. Any text that
+is entered above this line will be added to the help desk ticket as
+a new note. Any attachments will be added to the existing
+attachments linked to the ticket</p>
+</li>
+<li>
+<p>This process continues until the customer's enquiry is resolved.</p>
+</li>
+</ol></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+<p>© Copyright 2006-2019 Inflectra Corporation, All Rights Reserved | en-US |</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

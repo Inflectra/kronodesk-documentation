@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="https://kronodoc.inflectra.com/User-Manual/Help-Desk/">
+
+<link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Help Desk - KronoDocs</title>
+<link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+<link href="../../css/font-awesome.min.css" rel="stylesheet">
+<link href="../../css/base.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/base.css">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+<script src="../../js/jquery-1.10.2.min.js" defer></script>
+<script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+<script src="/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+<a class="navbar-brand" href="../..">KronoDocs</a>
+
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../Functionality-Overview/">Functionality Overview</a>
+</li>
+                                    
+<li >
+    <a href="../Home-Page/">Home Page</a>
+</li>
+                                    
+<li >
+    <a href="../Knowledge-Base/">Knowledge Base</a>
+</li>
+                                    
+<li >
+    <a href="../Forums/">Forums</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Help Desk</a>
+</li>
+                                    
+<li >
+    <a href="../User-Profile/">User Profile</a>
+</li>
+                                    
+<li >
+    <a href="../Reports/">Reports</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Getting-Started/">Getting Started</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Using-the-Help-Desk-Ticketing-System/">Using the Help Desk Ticketing System</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Configuring-and-Customizing/">Configuring and Customizing</a>
+</li>
+                                    
+<li >
+    <a href="../../Quick-Start-Guide/Appendix-A--Sample-Users/">Appendix A-Sample Users</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Administration-Guide/Installing-KronoDesk/">Installing KronoDesk</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/System-Administration/">System Administration</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/System-Settings/">System Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Users/">Users</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Forum-Settings/">Forum Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Knowledge-Base-Settings/">Knowledge Base Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Help-Desk-Settings/">Help Desk Settings</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Workflows/">Workflows</a>
+</li>
+                                    
+<li >
+    <a href="../../Administration-Guide/Event-Notifications/">Event Notifications</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Appendices</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Administration-Guide/Appendix-A----Troubleshooting/">Troubleshooting</a>
+</li>
+            
+<li >
+    <a href="../../Administration-Guide/Appendix-B----Using-with-SSL/">Using with SSL</a>
+</li>
+            
+<li >
+    <a href="../../Administration-Guide/Appendix-C----Sending-Email-through-IIS/">Sending Email through IIS</a>
+</li>
+            
+<li >
+    <a href="../../Administration-Guide/Appendix-D----Upgrading/">Upgrading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Integrations <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Email</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Email-Integration-Guide/Installing-the-Email-Integration-Service/">Installing</a>
+</li>
+            
+<li >
+    <a href="../../Email-Integration-Guide/Configuring-the-Email-Integration-Service/">Configuring</a>
+</li>
+            
+<li >
+    <a href="../../Email-Integration-Guide/Using-the-Email-Integration-Service-with-KronoDesk/">Using</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Migration</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Migration-and-Integration-Guide/Importing-from-Microsoft-Excel/">Importing from Excel</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+<li>
+  <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+    <i class="fa fa-search"></i>
+  </a>
+</li>
+<li >
+  <a rel="next" href="../Forums/" >
+    <i class="fa fa-arrow-left"></i></a>
+</li>
+<li >
+  <a rel="prev" href="../User-Profile/" ><i
+      class="fa fa-arrow-right"></i></a>
+</li>
+                            <li>
+                                <a href="https://www.inflectra.com">Inflectra</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a
+                href="#help-desk">Help Desk</a></li>
+        <li class="second-level"><a href="#ticket-list">Ticket List</a></li>
+        
+        <li class="third-level"><a href="#filtering-and-sorting">Filtering and Sorting</a></li>
+        <li class="third-level"><a href="#changing-columns">Changing Columns</a></li>
+        <li class="third-level"><a href="#auto-refreshing">Auto-Refreshing</a></li>
+        <li class="third-level"><a href="#export-to-excel">Export to Excel</a></li>
+        <li class="third-level"><a href="#context-menu">Context Menu</a></li>
+        <li class="second-level"><a href="#create-new-ticket">Create New Ticket</a></li>
+        
+        <li class="third-level"><a href="#adding-a-document-attachment">Adding a Document Attachment</a></li>
+        <li class="third-level"><a href="#adding-a-screenshot">Adding a Screenshot</a></li>
+        <li class="second-level"><a href="#ticket-details">Ticket Details</a></li>
+        
+        <li class="third-level"><a href="#changing-fields-and-statuses">Changing Fields and Statuses</a></li>
+        <li class="third-level"><a href="#using-the-journal-to-view-comments">Using the Journal to view comments</a></li>
+        <li class="third-level"><a href="#adding-notes">Adding Notes</a></li>
+        <li class="third-level"><a href="#ccs-to-a-ticket">CC's to a Ticket</a></li>
+        <li class="third-level"><a href="#attachments">Attachments</a></li>
+        <li class="third-level"><a href="#incidents">Incidents</a></li>
+        <li class="third-level"><a href="#history">History</a></li>
+        <li class="third-level"><a href="#navigating-tickets-using-the-sidebar">Navigating tickets using the sidebar</a></li>
+        <li class="third-level"><a href="#working-more-efficiently-using-keyboard-shortcuts">Working More Efficiently Using Keyboard Shortcuts</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="help-desk">Help Desk</h1>
+<p>The KronoDesk® help desk ticket management system provides the final
+level of customer support. When a customer cannot readily find the
+solution through either the knowledge base or support forums, they can
+submit a help desk ticket through KronoDesk's help desk submission
+system. The system allows them to quickly and easily enter the
+description of the problem, attach any relevant documents or
+screenshots, categorize the issue and then submit it for resolution by
+the support agents.</p>
+<h2 id="ticket-list">Ticket List</h2>
+<p>When you click on the Help Desk option in the global navigation, you
+will be taken to the main help desk page:</p>
+<p><img alt="" src="../img/Help_Desk_50.png" /></p>
+<p>This page displays on the left-hand side a list of display options for
+viewing the help desk. The available option will depend on your role in
+the system. In general customers can only see their submitted tickets
+whereas customer support agents can see all the tickets in the system.</p>
+<p>The following display options are available:</p>
+<ul>
+<li>
+<p><strong>My Assigned Tickets</strong> -- This displays a list of all the open
+tickets assigned to the current user.</p>
+</li>
+<li>
+<p><strong>Unassigned Tickets</strong> - This displays a list of all the open
+tickets that are not assigned to any support agents.</p>
+</li>
+<li>
+<p><strong>My Opened Tickets</strong> - This displays a list of all the open tickets
+that were opened by the current user.</p>
+</li>
+<li>
+<p><strong>My Closed Tickets</strong> - This displays a list of all the closed
+tickets that were opened by the current user.</p>
+</li>
+<li>
+<p><strong>All Open Tickets</strong> -- This displays a list of all the open tickets
+regardless of who opened them or who they are assigned to.</p>
+</li>
+<li>
+<p><strong>All Closed Tickets</strong> - This displays a list of all the closed
+tickets regardless of who opened them or who they are assigned to.</p>
+</li>
+<li>
+<p><strong>All Tickets</strong> - This displays a list of all the tickets regardless
+of their status, who opened them or who they are assigned to.</p>
+</li>
+</ul>
+<p>In addition, there is an Operations pane that is displayed for support
+agents and lets you perform the following tasks:</p>
+<ul>
+<li>
+<p><strong>Assign Tickets to Me</strong> -- If you select ticket(s) in the main grid
+and then click this option, it will assign the selected tickets to
+your user.</p>
+</li>
+<li>
+<p><strong>Assign Tickets to User</strong> -- If you select ticket(s) in the main
+grid and then click this option, it will allow you to assign the
+selected tickets to a specific customer agent.</p>
+</li>
+<li>
+<p><strong>Unassign Tickets</strong> -- If you select ticket(s) in the main grid and
+then click this option, it will return the ticket to the unassigned
+list.</p>
+</li>
+<li>
+<p><strong>Merge Tickets --</strong> If you select two or more tickets in the grid
+(using SHIFT+click or CTRL+click) then click merge, the system will
+combine them into a single ticket for you.</p>
+</li>
+<li>
+<p><strong>Delete Tickets</strong> -- If you select ticket(s) in the main grid, then
+click this option, it will permanently delete the selected tickets.
+Typically this is only used for tickets generated from spam emails.</p>
+</li>
+</ul>
+<h3 id="filtering-and-sorting">Filtering and Sorting</h3>
+<p>The main ticket grid allows you to filter and sort the ticket list. You
+sort a column by simply clicking on the arrow in the header row. To
+filter the ticket list, simply enter the text into the search box and
+the ticket list will be automatically filtered:</p>
+<p><img alt="" src="../img/Help_Desk_51.png" /></p>
+<p>If you want to undo the filter, simply clear the filter and the full
+ticket list will be displayed.</p>
+<h3 id="changing-columns">Changing Columns</h3>
+<p>To show and hide different columns in the ticket grid, click on the
+columns icon above the grid and the column selector will be displayed:</p>
+<p><img alt="" src="../img/Help_Desk_52.png" /></p>
+<p>Once you have chosen the columns to display or hide simply click away
+from the dialog and the column selector will close and the grid will be
+reloaded with the new columns.</p>
+<h3 id="auto-refreshing">Auto-Refreshing</h3>
+<p>Sometimes as a support agent it is useful to have the ticket list
+auto-refresh every couple of seconds to ensure that you are seeing the
+most up-to-date information. Clicking on the "Auto Refresh" icon will
+enable this feature.</p>
+<h3 id="export-to-excel">Export to Excel</h3>
+<p>To export the current list of tickets to an Excel Comma Separated Values
+(CSV) file, simply click on the 'Excel' icon and the current ticket list
+will be exported into an MS-Excel compatible CSV file:</p>
+<p><img alt="" src="../img/Help_Desk_53.png" /></p>
+<h3 id="context-menu">Context Menu</h3>
+<p>KronoDesk® provides a handy shortcut for performing frequent operations
+on the ticket list. Simply hover the mouse over the ticket grid and
+click the right mouse button. This brings up the context menu:</p>
+<p><img alt="" src="../img/Help_Desk_54.png" /></p>
+<p>You can use this to perform the following operations:</p>
+<ul>
+<li>
+<p><strong>Assign Tickets to Me</strong> -- If you select ticket(s) in the main grid
+and then click this option, it will assign the selected tickets to
+your user.</p>
+</li>
+<li>
+<p><strong>Assign Tickets to User</strong> -- If you select ticket(s) in the main
+grid and then click this option, it will allow you to assign the
+selected tickets to a specific customer agent.</p>
+</li>
+<li>
+<p><strong>Unassign Tickets</strong> -- If you select ticket(s) in the main grid and
+then click this option, it will return the ticket to the unassigned
+list.</p>
+</li>
+<li>
+<p><strong>Merge Tickets --</strong> If you select two or more tickets in the grid
+(using SHIFT+click or CTRL+click) then click merge, the system will
+combine them into a single ticket for you.</p>
+</li>
+<li>
+<p><strong>Delete Tickets</strong> -- If you select ticket(s) in the main grid, then
+click this option, it will permanently delete the selected tickets.
+Typically this is only used for tickets generated from spam emails.</p>
+</li>
+</ul>
+<h2 id="create-new-ticket">Create New Ticket</h2>
+<p>If you click on the hyperlink to "Open Ticket", the system will display
+the new help desk ticket entry page:</p>
+<p><img alt="" src="../img/Help_Desk_55.png" /></p>
+<p>This page displays the following information:</p>
+<ul>
+<li>
+<p><strong>Opener</strong> -- When a customer support agent opens a ticket, they are
+opening it on behalf of a customer (for instance during a phone
+call). You can type a name, email address, or organization name into
+this field to get a list of possible matches. When a customer opens
+a ticket they do not see this field.</p>
+</li>
+<li>
+<p><strong>Product</strong> -- Each ticket has to be assigned to a specific product,
+which can be selected from the dropdown list</p>
+</li>
+<li>
+<p><strong>Subject/Description</strong> -- This section of the page allows you to
+enter the subject and long description of the customer's support
+issue. The long description allows formatted text and can include
+lists, tables and hyperlinks.</p>
+</li>
+<li>
+<p><strong>Ticket Fields --</strong> This section displays all the fields that need
+to be filled out when submitting the ticket. The fields that are
+required are displayed in <strong>bold type</strong> with an asterisk(*) next to
+the field name. When you change the product name field that may
+change the workflow associated with the ticket. If that happens, you
+will see some of the fields change.
+This is normal and allows the administrator to tailor the fields
+required to the type of product (e.g. a web application may need you
+to enter the browser type, whereas a mobile application would need
+to know the cellphone network)</p>
+</li>
+<li>
+<p><strong>Attachments</strong> -- This section is described in more detail below in
+<a href="#adding-a-document-attachment">Adding a Document Attachment</a></p>
+</li>
+</ul>
+<p>Please note that when a customer is creating a ticket, KronoDesk will
+dynamically search the knowledge base to see if there are any articles
+that could answer their question, based on what they enter as the
+ticket's subject:</p>
+<p><img alt="" src="../img/Help_Desk_56.png" /></p>
+<h3 id="adding-a-document-attachment">Adding a Document Attachment</h3>
+<p>You can drag and drop files onto the attachment area:</p>
+<p><img alt="" src="../img/Help_Desk_57.png" /></p>
+<p>As you add documents, they will appear in this control. To add a new
+attachment to the ticket, either drag and drop the files onto this
+control or click on the arrow to browse your local file system. Once the
+documents are attached they will be listed below the attachment area:</p>
+<p><img alt="" src="../img/Help_Desk_58.png" /></p>
+<p>You can remove any items by selecting the item and clicking the "Delete
+Selected" x.</p>
+<p><em>Note: The system uses file extensions to identity the type of file, so
+if your local operating system doesn't use file extensions, you may want
+to rename the file before uploading (e.g. changing MyDocument to
+MyDocument.pdf to identity it as an Acrobat document).</em></p>
+<h3 id="adding-a-screenshot">Adding a Screenshot</h3>
+<p>To include a screenshot in your ticket, first copy the image to your
+computer's clipboard (e.g. on Windows computers, the PRINT SCREEN button
+captures the current page and adds to the clipboard). Once the image is
+in the clipboard, position the cursor in the ticket Description text box
+where you want it to appear and then click CTRL+V to paste the image.</p>
+<p>The image will then be attached to the ticket and embedded in the rich
+text box.</p>
+<h2 id="ticket-details">Ticket Details</h2>
+<p>If you click on the hyperlink for a specific ticket in either the main
+ticket list page, one of the user dashboards, or the navigation sidebar,
+you will be taken to the details page for the specific ticket:</p>
+<p><img alt="" src="../img/Help_Desk_59.png" /></p>
+<p>This page is made up of three areas; the sidebar (left), the header (top
+right), and the journal (bottom right).</p>
+<p>The sidebar has two views. In both views there is a submit button at
+top. By default the sidebar shows:</p>
+<ul>
+<li>
+<p>information about the opener of the ticket</p>
+</li>
+<li>
+<p>an uploader area</p>
+</li>
+<li>
+<p>a list of custom fields</p>
+</li>
+</ul>
+<p>The alternate view of the sidebar is to show lists of relevant tickets
+to the user and can be used to quickly jump to other tickets. You can
+switch between these two views at any time by clicking the button in the
+top left (just to the left of the submit button).</p>
+<p>The header contains the ticket name and other important meta-data.</p>
+<p>The journal contains information associated with the activity taken over
+the course of the ticket. There are up to four types of data that the
+journal shows. Each user can show or hide the information based on their
+needs, by clicking the filter buttons, or change the sort order to be by
+date ascending or descending.</p>
+<p><img alt="" src="../img/Help_Desk_59.png" /></p>
+<p>The four types of information shown in the journal:</p>
+<ul>
+<li>
+<p><strong>Notes --</strong> the description of the original ticket plus a list of
+all the notes added by support personnel and the original submitter.</p>
+</li>
+<li>
+<p><strong>Attachments</strong> -- any file added to the ticket</p>
+</li>
+<li>
+<p><strong>Incidents</strong> -- If you have the integration with SpiraTeam®
+enabled, you will see any incidents (defects, bugs, change requests,
+etc.) related to the current ticket.</p>
+</li>
+<li>
+<p><strong>History</strong> --shows you the change history for the ticket.</p>
+</li>
+</ul>
+<h3 id="changing-fields-and-statuses">Changing Fields and Statuses</h3>
+<p>When editing an existing ticket, the fields that are available and the
+fields that are required will depend on your stage in the ticket
+workflow. For example, an open ticket might not require an "Assignee"
+whereas an assigned ticket typically would not. The types of change
+allowed and the email notifications that are sent will depend on how the
+system administrator has configured the workflow. Administrators should
+refer to the <em>KronoDesk Administration Guide</em> for details on configuring
+the ticket workflows to meet their needs. The workflow controls both the
+meta-data fields shown in the header, as well as any custom fields shown
+in the sidebar.</p>
+<p>Depending on the user's role and whether they are listed as the opener
+or assignee of the ticket, displayed in the top-left of the header, is a
+dropdown list with the allowed workflow operations:</p>
+<p><img alt="" src="../img/Help_Desk_60.png" /></p>
+<p>These workflow transitions allow the user to move the ticket from one
+status to another. For example in the default workflow, when the ticket
+is in the Assigned status, you will be given the options to change the
+status to one of:</p>
+<ul>
+<li>
+<p>"Open"</p>
+</li>
+<li>
+<p>"Waiting on Customer"</p>
+</li>
+<li>
+<p>"Waiting on Development"</p>
+</li>
+<li>
+<p>"Duplicate"</p>
+</li>
+<li>
+<p>"Non-Issue"</p>
+</li>
+</ul>
+<p>After changing the status of the ticket by clicking on the workflow
+link, you can then fill in the additional fields that are now enabled
+and/or required. Once you've made the changes to the appropriate ticket
+fields, click on the "Submit" button in the sidebar (at the top left of
+the screen).</p>
+<p>Some transitions may require a digital signature. In the workflow
+dropdown, those transitions will be marked with a lock symbol. Upon
+saving, you will be given a prompt:</p>
+<p><img alt="" src="../img/Help_Desk_61.png" /></p>
+<p>You must re-enter in your password, and an additional reason/meaning for
+the transition before the application will allow you to save your
+changed.</p>
+<h3 id="using-the-journal-to-view-comments">Using the Journal to view comments</h3>
+<p>The journal displays the entire history of a ticket, and most
+importantly all communication between agents and the customer. All
+messages from customers are shown in one color background (pale yellow
+in the default application theme). All messages to customers from agents
+are in a different color (light gray in the default application theme).
+Clicking at the top of each message / note will expand or collapse that
+note, to help scrolling through long tickets, or reviewing new
+information. Using the button at the top of the journal, you can also
+expand or collapse all comments at once.</p>
+<p>Here all comments are expanded:</p>
+<p><img alt="" src="../img/Help_Desk_62.png" /></p>
+<p>And here they are all collapsed:</p>
+<p><img alt="" src="../img/Help_Desk_63.png" /></p>
+<p>Any notes that are 'internal only' and therefore only visible to
+customer support agents, are displayed with a red background (in the
+default application theme) with a mute icon at the top left:</p>
+<p><img alt="" src="../img/Help_Desk_64.png" /></p>
+<h3 id="adding-notes">Adding Notes</h3>
+<p>You can reply to a ticket at any time by clicking the reply button in
+the journal toolbar (the rightmost button):</p>
+<p><img alt="" src="../img/Help_Desk_65.png" /></p>
+<p>You can also reply using any reply button on any expanded ticket note.
+This will show the reply window directly underneath that note. You can
+even start replying to one note and then click on another note to move
+the reply window to that second note. The new note / reply will always
+get added to the ticket in the same way, but it can be helpful to
+'attach' the reply window to a specific note you need to refer to in a
+reply.</p>
+<p><img alt="" src="../img/Help_Desk_66.png" /></p>
+<p>You need to enter the note text in the rich-text box. As soon as you do
+you will see the button to the bottom left of the reply window become
+active and say "Submit". Click this will save all changes to the ticket
+and add the note to the ticket at the same time.</p>
+<p>If you would like to insert a Knowledge Base (KB) article into your
+reply to the user, you can click on the link "Add KB to Note" (this is
+only visible to agents):</p>
+<p><img alt="" src="../img/Help_Desk_67.png" /></p>
+<p>You then select the KB article from the available list, choose the type
+of link to insert (name and link only, full article text, etc.). Then
+click the 'Insert Template' to populate the note with the KB article
+link/text. There are a number of templates you can use. These are all
+configurable by the application administrator.</p>
+<p>To include a screenshot in your note, first copy the image to your
+computer's clipboard (e.g. on Windows computers, the PRINT SCREEN button
+captures the current page and adds to the clipboard). Once the image is
+in the clipboard, position the cursor in the Note text box where you
+want it to appear and then click CTRL+V to paste the image.</p>
+<p>The image will then be attached to the ticket and embedded in the note
+text.</p>
+<h3 id="ccs-to-a-ticket">CC's to a Ticket</h3>
+<p>With KronoDesk's cc functionality, a user can make sure other interested
+parties are copied in to all email notifications about a ticket. If a
+user creates a ticket via email and adds cc's to that email, they will
+automatically be added as a cc to the ticket.</p>
+<p>You can tell that a ticket has cc's on them by looking at the ticket
+header -- there is a cc badge to the left of the ticket name:</p>
+<p><img alt="" src="../img/Help_Desk_68.png" /></p>
+<p><img alt="" src="../img/Help_Desk_69.png" /></p>
+<p>To view and edit the cc's on the ticket (any valid email address can be
+used), click on downward facing arrow on the right hand side of the
+ticket header (the "more actions" button).</p>
+<p><img alt="" src="../img/Help_Desk_70.png" /></p>
+<p><img alt="" src="../img/Help_Desk_71.png" /></p>
+<h3 id="attachments">Attachments</h3>
+<p>The attachments pane of the sidebar gives a drag and drop area for
+adding files to a ticket. Files added in the current editing session
+(before clicking "Submit") are shown below the attachment pane. Older
+files are shown in the journal. The documents can be in any format,
+though KronoDesk® will only display the icon for certain known types:</p>
+<p><img alt="" src="../img/Help_Desk_72.png" /></p>
+<p>The attachment list includes the filename/URL that was originally
+uploaded together with the file-size (in KB), name of the person who
+attached it and the date uploaded.</p>
+<p>To actually view the document, simply click on the filename hyperlink
+and a new web browser window will open. Depending on the type of file,
+this window will either display the document / web-page or prompt you
+for a place to save it on your local computer. To remove an existing
+attachment from a ticket, simply select the item and click the
+[Delete] button.</p>
+<p>To attach a new document to the ticket, you simply drag them onto the
+attachment upload control or click on the upload button and then browse
+to find the file on your local filesystem.</p>
+<p><em>Note: The system uses file extensions to identity the type of file, so
+if your local operating system doesn't use file extensions, you may want
+to rename the file before uploading (e.g. changing MyDocument to
+MyDocument.pdf to identity it as an Acrobat document).</em></p>
+<h3 id="incidents">Incidents</h3>
+<p>SpiraTeam® incidents linked to the current help desk ticket are shown in
+the journal (as long as the current user has permission to view them).
+If you see the following message, it means that your user profile in
+KronoDesk has not been linked to an equivalent SpiraTeam user profile.
+To fix the issue, click on the "user profile" link and enter your
+SpiraTeam RSS Token into your KronoDesk user profile. This is described
+in more detail in <a href="../User-Profile/#edit-profile">Edit Profile</a></p>
+<p><img alt="" src="../img/Help_Desk_73.png" /></p>
+<p>Once your KronoDesk user is linked to a corresponding SpiraTeam user,
+you will see a list of SpiraTeam incidents that were generated from the
+current ticket in the journal, organized with other journal items based
+on the date the incident was created:</p>
+<p><img alt="" src="../img/Help_Desk_74.png" /></p>
+<p>Each incident is displayed together with its incident ID, name, status,
+owner, and last update date. Hovering over the incident name will give a
+tooltip of the incident description. Clicking on the incident
+name/hyperlink will open the incident in SpiraTeam in a new window.</p>
+<p>This allows support agents to view the status of the incidents use it to
+determine when the ticket can be resolved because the underlying product
+issue has been resolved.</p>
+<p>To log a new incident in SpiraTeam based on the current help desk
+ticket, click on downward facing arrow on the right hand side of the
+ticket header (the "more actions" button).</p>
+<p><img alt="" src="../img/Help_Desk_70.png" /></p>
+<p><img alt="" src="../img/Help_Desk_75.png" /></p>
+<p>To "Add New Incident" make sure a SpiraTeam project is selected from the
+dropdown list (if the name of the product for the ticket matches the
+name of any Spirateam project, that project will be automatically
+selected for you):</p>
+<p><img alt="" src="../img/Help_Desk_76.png" /></p>
+<p>This dialog lets you add a new incident to the linked instance of
+SpiraTeam. The system will prepopulate the description of the incident
+with the ticket description. You can edit this text or clear it
+completely and enter in custom content.</p>
+<p>You then need to enter an incident name, and choose values for other
+fields based on what fields are required (this is set inside SpiraTeam
+on a project by project basis). Once you are satisfied, click "Add" to
+add the incident to SpiraTeam. Once the incident has been added, it will
+appear in the KronoDesk journal.</p>
+<p><em>Note: You need to make sure that the SpiraTeam user that you have
+associated with your KronoDesk profile has permissions to create new
+incidents in that project in SpiraTeam.</em></p>
+<h3 id="history">History</h3>
+<p>The journal displays the list of changes that have been performed on the
+help desk ticket artifact since its creation. An example ticket change
+history is shown below:</p>
+<p><img alt="" src="../img/Help_Desk_77.png" /></p>
+<p>The change history displays the date that each change was made, together
+with the fields that were changed, the old and new values and the person
+who made the change. This allows a complete audit trail to be maintained
+of all changes in the system.</p>
+<h3 id="navigating-tickets-using-the-sidebar">Navigating tickets using the sidebar</h3>
+<p>When viewing the sidebar as a list of tickets, you will see links to
+take you back to the ticket list and to create a new ticket. There will
+also be a list of peer tickets to the one selected. This latter list is
+useful as a navigation shortcut; you can quickly view the peer tickets
+by clicking on the navigation links without having to first return to
+the ticket list page. The navigation list can be switched between four
+different modes:</p>
+<ul>
+<li>
+<p>The list of tickets matching the current filter</p>
+</li>
+<li>
+<p>The list of all tickets, irrespective of the current filter</p>
+</li>
+<li>
+<p>The list of tickets assigned to the current user</p>
+</li>
+<li>
+<p>The list of tickets opened by the current user</p>
+</li>
+</ul>
+<h3 id="working-more-efficiently-using-keyboard-shortcuts">Working More Efficiently Using Keyboard Shortcuts</h3>
+<p>Press the question mark symbol on your keyboard to bring up a list of
+available keyboard shortcuts. These should allow you to operate the
+entire ticket details page without requiring a mouse and can greatly
+speed up your workflow as you reply to, and manage your tickets.</p>
+<p><img alt="" src="../img/Help_Desk_78.png" /></p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+<p>© Copyright 2006-2019 Inflectra Corporation, All Rights Reserved | en-US |</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
