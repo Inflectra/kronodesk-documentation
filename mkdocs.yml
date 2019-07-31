@@ -17,11 +17,7 @@ nav:
     - Help Desk: User-Manual\Help-Desk.md
     - User Profile: User-Manual\User-Profile.md
     - Reports: User-Manual\Reports.md
-  - Quick Start Guide:
-    - Getting Started: Quick-Start-Guide\Getting-Started.md
-    - Using the Help Desk Ticketing System: Quick-Start-Guide\Using-the-Help-Desk-Ticketing-System.md
-    - Configuring and Customizing: Quick-Start-Guide\Configuring-and-Customizing.md
-    - Appendix A-Sample Users: Quick-Start-Guide\Appendix-A--Sample-Users.md
+  - Quick Start Guide: Quick-Start-Guide\index.md
   - Administration Guide: 
     - Installing KronoDesk: Administration-Guide\Installing-KronoDesk.md
     - System Administration: Administration-Guide\System-Administration.md
