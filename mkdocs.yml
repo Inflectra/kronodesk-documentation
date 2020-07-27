@@ -1,16 +1,71 @@
+# META
 site_name: KronoDocs
-copyright: © Copyright 2006-2019 Inflectra Corporation, All Rights Reserved | en-US |
+copyright: © Copyright 2006-2020 Inflectra Corporation, All Rights Reserved | en-US |
 
 repo_name: Inflectra
 repo_url: https://www.inflectra.com
 site_url: https://kronodoc.inflectra.com/
 google_analytics: ['UA-1302007-6', 'https://kronodoc.inflectra.com/']
 
-theme: 
-  name: mkdocs
-  custom_dir: inflectra_mkdocs
+# EXTENSIONS USED
+markdown_extensions:
+  - attr_list
+  - footnotes
+  - admonition
+  - codehilite:
+      linenums: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+
+# THEME INFORMATION
+theme:
+  features:
+    - instant
+  icon:
+    logo: material/library
+    repo: fontawesome/brands/git-alt
+  language: en 
+  name: material
+  palette:
+    primary: black
+    accent: amber
+  font:
+    code: IBM Plex Mono
+  favicon: images/favicon.ico
+  logo: images/logo.svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/inflectra
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/inflectra
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/inflectra-corporation
+
+
+# NAVIGATION MENU
 nav:
   - User Manual:
+    - How to use this manual: User-Manual\index.md
     - Functionality Overview: User-Manual\Functionality-Overview.md
     - Home Page: User-Manual\Home-Page.md
     - Knowledge Base: User-Manual\Knowledge-Base.md
@@ -20,6 +75,7 @@ nav:
     - Reports: User-Manual\Reports.md
   - Quick Start Guide: Quick-Start-Guide\index.md
   - Administration Guide: 
+    - How to use this guide: Administration-Guide\index.md
     - Installing KronoDesk: Administration-Guide\Installing-KronoDesk.md
     - System Administration: Administration-Guide\System-Administration.md
     - System Settings: Administration-Guide\System-Settings.md
