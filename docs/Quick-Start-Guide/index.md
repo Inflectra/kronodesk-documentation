@@ -348,11 +348,10 @@ To do that, go to 'System Settings \> Remove Sample Data'. Click on the
 Congratulations, you are now ready to use KronoDesk. You can now add
 users, products and forums.
 
-For more information about any of the features, please refer to the
-[*KronoDesk User
-Manual*](http://www.inflectra.com/Documents/KronoDesk-v2.0-User-Manual.pdf)
-or the [*KronoDesk Administration & Install
-Guide*](http://www.inflectra.com/Documents/KronoDesk-v2.0-Administration-Guide.pdf).
+For more information about any of the features, please refer to the:
+
+- [**KronoDesk User Manual**](../User-Manual)
+- [**KronoDesk Administration & Install Guide**](../Administration-Guide).
 
 
 
