@@ -30,7 +30,7 @@ In addition, there is an Operations pane that is displayed for support agents an
 - **Assign Tickets to Me** -- If you select ticket(s) in the main grid and then click this option, it will assign the selected tickets to your user.
 - **Assign Tickets to User** -- If you select ticket(s) in the main grid and then click this option, it will allow you to assign the selected tickets to a specific customer agent.
 - **Unassign Tickets** -- If you select ticket(s) in the main grid and then click this option, it will return the ticket to the unassigned list.
-- **Merge Tickets --** If you select two or more tickets in the grid (using SHIFT+click or CTRL+click) then click merge, the system will combine them into a single ticket for you.
+- **Merge Tickets --** If you select two or more tickets in the grid (using SHIFT+click or CTRL+click) then click merge, the system will prompt you to select a primary ticket that the others will be merged into. It then combines the selected into that primary ticket, with each message added as a separate note.
 - **Delete Tickets** -- If you select ticket(s) in the main grid, then click this option, it will permanently delete the selected tickets. Typically this is only used for tickets generated from spam emails.
 
 

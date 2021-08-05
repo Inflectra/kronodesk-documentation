@@ -4,10 +4,10 @@
 
 !!! info "Summary"
     - Adds Active Directory / LDAP support for user creation and authentication, giving on premise customers an alternate way to manage user authentication
-    - Brand new installer for on premise customers with enhanced functionality and a streamlined user interface
+    - Brand [new installer](../../Administration-Guide/Installing-KronoDesk) for on premise customers with enhanced functionality and a streamlined user interface
 
 !!! success "New features"
-    - Rebuild and upgrade the on premise installer application to improved functionality and usability [RQ:2389]
+    - Rebuild and upgrade the [on-premise installer application](../../Administration-Guide/Installing-KronoDesk) to improved functionality and usability [RQ:2389]
 
     * **Active Directory / LDAP support for user creation and authentication**
 
@@ -21,7 +21,7 @@
     - Ensure that only logged in internal users can access the API documentation pages [IN:3058]
     - Improve the language of the action buttons on the article (KB) edit page to make their meaning clearer [IN:3982]
     - Ensure that tooltips on the Help Desk ticket list table always show the the latest note to internal users [IN:3990]
-    - Allow system administrators to change the login names of existing users [IN:4353]
+    - Allow system administrators to change the [login ID](../../Administration-Guide/Users/#manage-users) of existing users [IN:4353]
     - Move the activity indicator icon to the left so that it does not obscure the user icon [IN:4888]
     - Fix the Recent Forum Posts widget on the home page sometimes displaying the entire forum post [IN:4918]
     - Fix changes not being saved on the organization detail page if the organization name is less than 5 characters [IN:5029]
