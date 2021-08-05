@@ -64,36 +64,43 @@ extra:
 
 # NAVIGATION MENU
 nav:
-  - User Manual:
-    - How to use this manual: User-Manual\index.md
-    - Functionality Overview: User-Manual\Functionality-Overview.md
-    - Home Page: User-Manual\Home-Page.md
-    - Knowledge Base: User-Manual\Knowledge-Base.md
-    - Forums: User-Manual\Forums.md
-    - Help Desk: User-Manual\Help-Desk.md
-    - User Profile: User-Manual\User-Profile.md
-    - Reports: User-Manual\Reports.md
-  - Quick Start Guide: Quick-Start-Guide\index.md
-  - Administration Guide: 
-    - How to use this guide: Administration-Guide\index.md
-    - Installing KronoDesk: Administration-Guide\Installing-KronoDesk.md
-    - System Administration: Administration-Guide\System-Administration.md
-    - System Settings: Administration-Guide\System-Settings.md
-    - Users: Administration-Guide\Users.md
-    - Forum Settings: Administration-Guide\Forum-Settings.md
-    - Knowledge Base Settings: Administration-Guide\Knowledge-Base-Settings.md
-    - Help Desk Settings: Administration-Guide\Help-Desk-Settings.md
-    - Workflows: Administration-Guide\Workflows.md
-    - Event Notifications: Administration-Guide\Event-Notifications.md
-    - Appendices:
-      - Troubleshooting: Administration-Guide\Appendix-A----Troubleshooting.md
-      - Using with SSL: Administration-Guide\Appendix-B----Using-with-SSL.md
-      - Sending Email through IIS: Administration-Guide\Appendix-C----Sending-Email-through-IIS.md
-      - Upgrading: Administration-Guide\Appendix-D----Upgrading.md
-  - Integrations: 
-    - Email:
-      - Installing: Email-Integration-Guide\Installing-the-Email-Integration-Service.md
-      - Configuring: Email-Integration-Guide\Configuring-the-Email-Integration-Service.md
-      - Using: Email-Integration-Guide\Using-the-Email-Integration-Service-with-KronoDesk.md
-    - Migration: 
-      - Importing from Excel: Migration-and-Integration-Guide\Importing-from-Microsoft-Excel.md
+- User Manual:
+  - How to use this manual: User-Manual\index.md
+  - Functionality Overview: User-Manual\Functionality-Overview.md
+  - Home Page: User-Manual\Home-Page.md
+  - Knowledge Base: User-Manual\Knowledge-Base.md
+  - Forums: User-Manual\Forums.md
+  - Help Desk: User-Manual\Help-Desk.md
+  - User Profile: User-Manual\User-Profile.md
+  - Reports: User-Manual\Reports.md
+- Quick Start Guide: Quick-Start-Guide\index.md
+- Administration Guide: 
+  - How to use this guide: Administration-Guide\index.md
+  - Installing KronoDesk: Administration-Guide\Installing-KronoDesk.md
+  - System Administration: Administration-Guide\System-Administration.md
+  - System Settings: Administration-Guide\System-Settings.md
+  - Users: Administration-Guide\Users.md
+  - Forum Settings: Administration-Guide\Forum-Settings.md
+  - Knowledge Base Settings: Administration-Guide\Knowledge-Base-Settings.md
+  - Help Desk Settings: Administration-Guide\Help-Desk-Settings.md
+  - Workflows: Administration-Guide\Workflows.md
+  - Event Notifications: Administration-Guide\Event-Notifications.md
+  - Appendices:
+    - Troubleshooting: Administration-Guide\Appendix-A----Troubleshooting.md
+    - Using with SSL: Administration-Guide\Appendix-B----Using-with-SSL.md
+    - Sending Email through IIS: Administration-Guide\Appendix-C----Sending-Email-through-IIS.md
+    - Upgrading: Administration-Guide\Appendix-D----Upgrading.md
+- Integrations: 
+  - Email:
+    - Installing: Email-Integration-Guide\Installing-the-Email-Integration-Service.md
+    - Configuring: Email-Integration-Guide\Configuring-the-Email-Integration-Service.md
+    - Using: Email-Integration-Guide\Using-the-Email-Integration-Service-with-KronoDesk.md
+  - Migration: 
+    - Importing from Excel: Migration-and-Integration-Guide\Importing-from-Microsoft-Excel.md
+- About:
+  - Introduction to KronoDesk: About/introduction-to-kronodesk.md
+  - Release Notes for v4: About/release-notes-v4.md
+  - Release Notes for v3: About/release-notes-v3.md
+  - Release Notes for v2: About/release-notes-v2.md
+  - Release Notes for v1: About/release-notes-v1.md
+  - Legal Notices: About/legal-notices.md
