@@ -3,7 +3,7 @@
 ## Version 4.0 (August 2021)
 
 !!! info "Summary"
-    - Adds Active Directory / LDAP support for user creation and authentication, giving on premise customers an alternate way to manage user authentication
+    - Adds [Active Directory / LDAP support](../../Administration-Guide/Users/#ldap-configuration) for user creation and authentication, giving on premise customers an alternate way to manage user authentication
     - Brand [new installer](../../Administration-Guide/Installing-KronoDesk) for on premise customers with enhanced functionality and a streamlined user interface
 
 !!! success "New features"

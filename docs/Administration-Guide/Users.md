@@ -30,7 +30,11 @@ This page will display a list of all the users (both active and inactive) curren
 
 ![](img/Users_35.png)
 
-The users are listed with their name, login, email address, active status, approved status, whether they are currently locked out (for incorrectly entering their password too many times), the date they last logged-in and their user id. You can sort or filter the user list by entering the text in the search box. To view the details of a specific user, simply click on their name which is a hyperlink:
+The users are listed with their name, login, email address, active status, approved status, whether they are currently locked out (for incorrectly entering their password too many times), the date they last logged-in and their user id. You can sort or filter the user list by entering the text in the search box. To view the details of a specific user, simply click on their name which is a hyperlink.
+
+If LDAP is enabled and configured to allow the importing of users, a button called "Import from LDAP Server" will display below the list of users. Click this button to start [Importing LDAP Users](#importing-ldap-users). 
+
+### User Profile Page
 
 ![](img/Users_36.png)
 
@@ -44,6 +48,7 @@ You can update the following fields on this page:
 - **Comment**: Used for Admin purposes only, the user does not see this on his own account.
 - **Culture/Locale**: By default all profiles will be set to use the application's default culture. This means that the language and number formats used in the application will be the ones decided by the person who installed the system. However there are cases where you want to use a different language or number format (for example, a German employee working in the German office of a French company might want to use the German culture instead of French). You can change the culture to any of the options listed in the dropdown list.
 - **Time zone** - By default all profiles will be set to use the application's default time zone. This means that the time zone used in the application to accept/display data will be the one decided by the person who installed the system. However there are cases where you want to use a different time zone (for example, a German employee working in the German office of an American company might want to use CET instead of EST). You can change the time zone to any of the options listed in the dropdown list.
+- **LDAP DN**: If [LDAP](#ldap-configuration) is enabled at the system level, this field will be visible. It will show the current LDAP DN of any user. To force a user to use LDAP for authentication enter their valid LDAP DN. To remove LDAP from a user, blank out the LDAP DN and fill in the password field with a new password.
 - **Password**: if you want to change the user's password, you can enter it in the text box. If you don't want to change the password, you can leave this blank.
 - **Security Question/Answer**: if you want to change the user's challenge question/answer, enter a question that only they will know the answer to, together with the matching answer to that question. If you don't want to change the question/answer, you can leave these blank.
 - **Roles**: this displays a list of the available roles in the system, with the ones that the user belongs to selected. You can change the roles by selecting them in the dropdown list.
@@ -148,3 +153,58 @@ The fields available here are:
 
 Changes made on this page take effect immediately - after any users on the ticket pages refresh their display.
 
+
+## LDAP Configuration
+In addition to managing users and their authentication from KronoDesk itself, the application also supports LDAP. This allows you to avoid having to store passwords in a user's KronoDesk profile. You can have both types of user exist at the same time - KronoDesk users that store their passwords inside KronoDesk, and LDAP users that use their existing LDAP passwords.
+
+To set up LDAP within KronoDesk, you must first ensure you have:
+
+- a valid LDAP directory 
+- the LDAP server can communicate with the server where KronoDesk is installed
+
+![LDAP configuration options](img/Users_LDAP-configuration.PNG)
+
+On the LDAP configuration page you can edit the following properties/fields (note that the application does not perform any validation or connections checks on these fields):
+
+* **General Settings** are all blank / unchecked by default:
+
+    - **LDAP Enabled**: Check this box to enable LDAP import or for LDAP authentication to be available. If this box is unchecked no user currently authenticated using LDAP will be able to login to the system. 
+    - **LDAP Host**: (*must* be populated to enable LDAP). This should contain the name of the LDAP server that you want SpiraPlan to connect to together with the port number if it's not the default of 389.
+    - **Use Secure Sockets Layer (SSL)**: You should select this check-box if your LDAP server requires use of the LDAPS secure protocol. Leave unchecked for unencrypted LDAP communication.
+    - **Base DN**: (*must* be populated to import LDAP users). This should be the distinguished name of the object inside your LDAP server that contains the list of user accounts. This varies by the type of LDAP server, please consult your LDAP server documentation for more details.
+    - **Bind DN**: (*must* be populated to import LDAP users). This should be the distinguished name of the user inside your LDAP server that will be used to authenticate against when importing users. If not provided, SpiraPlan® will try and authenticate with the LDAP server anonymously.
+    - **Bind Password**: (*must* be populated to import LDAP users). The is the password of the user specified in the Bind DN field above.
+
+* **Attributes** are filled out by default with the correct default values for an AD-based LDAP system:
+
+    - **Login**: When SpiraPlan® imports users from the LDAP server it needs to know the user attribute inside the LDAP server that it should use to generate the SpiraPlan® user-name. For most LDAP servers the appropriate attribute would be "uid". However for Windows ActiveDirectory, the attribute "sAMAccountName" should be used instead.
+    - **First Name**: Providing this optional attribute will allow SpiraPlan® to automatically populate the first name field of the imported user instead of simply using the username as a placeholder.
+    - **Last Name**: Providing this optional attribute will allow SpiraPlan® to automatically populate the last name field of the imported user instead of simply using the username as a placeholder.
+    - **Middle Initial**: Providing this optional attribute will allow SpiraPlan® to automatically populate the middle initial field of the imported user instead of simply leaving it blank.
+    - **Email Address**: Providing this optional attribute will allow SpiraPlan® to automatically populate the email address field of the imported user instead of simply using the username@spiratest.com as a placeholder.
+
+- **Sample User**: You can optionally enter a sample user and password to test that the user is correctly authenticated against the server. You can update the LDAP configuration without setting this, but if you do provide a sample user/password, it will not save the configuration unless the authentication succeeds. If you choose to enter it, the user's name should be the fully-distinguished name of the user (e.g. CN=Sample User, CN=Users, OU=Headquarters, DC=MyCompany, DC=Com).
+
+
+## Importing LDAP Users
+If LDAP is enabled and configured to allow the importing of users, click the "Import from LDAP Server" button on the [Manage Users](#manage-users) page to start the import process. 
+
+![](img/Users_LDAP-import.png)
+
+This screen lists all the users available in the LDAP server that have not been already imported into KronoDesk (and that have a login field populated for them on the LDAP server). 
+
+Users are listed with their:
+
+- Common name
+- Login
+- First name
+- Middle initial
+- Last name
+- Email address
+- Fully distinguished LDAP name (DN). 
+
+You can narrow down the list by entering partial name matches in any of the fields displayed and clicking \[Filter\] and/or you can sort the results by clicking on the directional arrows in the field headings.
+
+Select the checkbox of any users you want to import and click "Import" to complete the operation. These users can now login to KronoDesk and use their existing LDAP login and password information.
+
+**NOTE**: if the first name, last name, or email address are missing for a user, the system will populate these fields on import with dummy values. If the middle initial is blank for a user, no value will be entered on import.
