@@ -82,7 +82,7 @@ On **Windows 10**, to install IIS, you need to click Start \> Control Panel \> P
 
 ![](img/Installing_12b.png)
 
-![](img/Installing__12c.png)
+![](img/Installing_12c.png)
 
 Make sure that the following features are enabled within the 'Internet Information Services' folder:
 
