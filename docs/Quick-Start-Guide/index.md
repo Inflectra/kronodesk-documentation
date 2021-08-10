@@ -1,33 +1,33 @@
 # KronoDesk Quick Start Guide
 
-***
-
-
 ## Getting Started
 
-Once you have either downloaded and installed a trial version of KronoDesk or signed up for a hosted trial, you should be able to see the following home page in your web browser:
+Once you have either signed up for a hosted trial or downloaded and installed a trial version of KronoDesk, go to your new KronoDesk web application to see its home page in your web browser:
 
 ![](img/Getting_Started_3.png)
 
-This is the view of the system that a guest user would see of the system. As you can see it displays some general help information for them as well as a list of recent articles, forums posts, company news and popular articles.
+This is the same view a guest user will see. The home page shows:
+
+- general help information (which can be fully customized based on your needs)
+- company updates (via an RSS feed you can specify)
+- lists of popular and new articles (from the knowledge base)
+- a list of recent forums posts
 
 Before logging in as an administrator and showing you how to add new articles, forum posts and help desk tickets, let's start by seeing what information a guest user can see.
 
-
 ### Viewing Knowledge Base Articles
 
-When a user has a problem and needs help, their first level of support would be to look for a pre-written knowledge base (KB) article that has been written by a support agent.
+When a user has a problem and needs help, their first level of support should be to look for a pre-written Knowledge Base (KB) article that has been written by a support agent.
 
-Users can find articles either by searching or by browsing the available topics. To search, enter a search term (for example, "error message") in the KB search box:
+Users can find articles either by searching or by browsing the available topics. To search, enter a search term (for example, "error message") in the KB search box on the home page:
 
 ![](img/Getting_Started_4.png)
 
-This will automatically display a drop-down list of matching articles:
+This will automatically display a drop-down list of matching articles and can click on an article to view it:
 
 ![](img/Getting_Started_5.png)
 
-The user can then click on an article to view it, or click on the
-'browse' link to view articles organized by category:
+To browse the knowledge base, instead of searching, click the 'browse the knowledge base' link below the search box to view articles organized by category:
 
 ![](img/Getting_Started_6.png)
 
@@ -62,9 +62,8 @@ If you are interested in this topic, you can click on the breadcrumb links at th
 
 ![](img/Getting_Started_12.png)
 
+
 ***
-
-
 ## Using the Help Desk Ticketing System
 
 Once a user has looked at the public information, if they still cannot find an answer to their problem they typically submit a help desk ticket to the support team. This section shows you how to use the help desk in KronoDesk.
@@ -100,8 +99,7 @@ Once the ticket is submitted, switch roles so you can simulate being the custome
 
 ### Responding to a Ticket
 
-You can create a ticket as an internal user or as a customer. Let's see the experience from the employee's perspective. Click the 'Sign Out'
-link and login as an employee using the following credentials:
+Click the 'Sign Out' link and login as an employee using the following credentials:
 
 -   Login: ericemployee
 -   Password: PleaseChange
@@ -189,7 +187,6 @@ You can use the operations in the sidebar to bulk assign help desk tickets to sp
 
 ***
 
-
 ## Configuring and Customizing
 
 You have now tried out KronoDesk both as a user viewing the knowledge base and forums, as a customer submitting a help desk ticket, and as a manager. This section describes the steps needed to configure the system for real use by your organization.
@@ -212,7 +209,7 @@ The next sections will illustrate a couple of important setup steps that you wil
 
 ### Configure Branding
 
-Under System Settings \> Appearance, you will have two tabs. The first tab, 'Appearance', will let you select one of the pre-installed themes, or edit a theme to customize the applications appearance to match your company color scheme. The edit theme page will let you set various colors for different parts of the application:
+Under System Settings > Appearance, you will have two tabs. The first tab, 'Appearance', will let you select one of the pre-installed themes, or edit a theme to customize the applications appearance to match your company color scheme. The edit theme page will let you set various colors for different parts of the application:
 
 ![](img/Configuring_and_Customizing_28.png)
 
@@ -242,10 +239,9 @@ For more information about any of the features, please refer to the:
 - [**KronoDesk User Manual**](../User-Manual)
 - [**KronoDesk Administration & Install Guide**](../Administration-Guide).
 
+
 ***
-
-
-## Appendix A- Sample Users
+## Appendix A - Sample Users
 
 Here are the users and roles we used during the demonstration:
 

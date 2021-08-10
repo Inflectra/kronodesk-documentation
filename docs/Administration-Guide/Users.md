@@ -168,7 +168,7 @@ On the LDAP configuration page you can edit the following properties/fields (not
 
 * **General Settings** are all blank / unchecked by default:
 
-    - **LDAP Enabled**: Check this box to enable LDAP import or for LDAP authentication to be available. If this box is unchecked no user currently authenticated using LDAP will be able to login to the system. 
+    - **LDAP Enabled**: Check this box to enable LDAP import or for LDAP authentication to be available. *If this box is unchecked no user currently authenticated using LDAP will be able to login to the system.*
     - **LDAP Host**: (*must* be populated to enable LDAP). This should contain the name of the LDAP server that you want SpiraPlan to connect to together with the port number if it's not the default of 389.
     - **Use Secure Sockets Layer (SSL)**: You should select this check-box if your LDAP server requires use of the LDAPS secure protocol. Leave unchecked for unencrypted LDAP communication.
     - **Base DN**: (*must* be populated to import LDAP users). This should be the distinguished name of the object inside your LDAP server that contains the list of user accounts. This varies by the type of LDAP server, please consult your LDAP server documentation for more details.
@@ -207,4 +207,10 @@ You can narrow down the list by entering partial name matches in any of the fiel
 
 Select the checkbox of any users you want to import and click "Import" to complete the operation. These users can now login to KronoDesk and use their existing LDAP login and password information.
 
-**NOTE**: if the first name, last name, or email address are missing for a user, the system will populate these fields on import with dummy values. If the middle initial is blank for a user, no value will be entered on import.
+
+!!! hint
+    Only import real users who will actually be logging in. 
+       
+    If the first name, last name, or email address are missing for a user, the system will populate these fields on import with dummy values. 
+    
+    If the middle initial is blank for a user, no value will be entered on import.

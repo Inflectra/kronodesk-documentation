@@ -159,7 +159,7 @@ The four types of information shown in the journal:
 
 -   **Attachments** -- any file added to the ticket
 
--   **Incidents** -- If you have the integration with SpiraTeam®
+-   **Incidents** -- If you have the integration with SpiraPlan®
 enabled, you will see any incidents (defects, bugs, change requests, etc.) related to the current ticket.
 
 -   **History** --shows you the change history for the ticket.
@@ -270,33 +270,39 @@ To attach a new document to the ticket, you simply drag them onto the attachment
 
 ### Incidents
 
-SpiraTeam® incidents linked to the current help desk ticket are shown in the journal (as long as the current user has permission to view them). If you see the following message, it means that your user profile in KronoDesk has not been linked to an equivalent SpiraTeam user profile. To fix the issue, click on the "user profile" link and enter your SpiraTeam RSS Token into your KronoDesk user profile. This is described in more detail in [Edit Profile](../User-Profile/#edit-profile)
+SpiraPlan® incidents linked to the current help desk ticket are shown in the journal (as long as the current user has permission to view them). To check or change your connection to Spira click on the "user profile" link and enter your SpiraPlan username and RSS Token into your KronoDesk user profile. This is described in more detail in [Edit Profile](../User-Profile/#edit-profile).
 
-![](img/Help_Desk_73.png)
-
-Once your KronoDesk user is linked to a corresponding SpiraTeam user, you will see a list of SpiraTeam incidents that were generated from the current ticket in the journal, organized with other journal items based on the date the incident was created:
+Once your KronoDesk user is linked to a corresponding SpiraPlan user, you will see a list of SpiraPlan incidents that were generated from the current ticket in the journal, organized with other journal items based on the date the incident was created:
 
 ![](img/Help_Desk_74.png)
 
-Each incident is displayed together with its incident ID, name, status, owner, and last update date. Hovering over the incident name will give a tooltip of the incident description. Clicking on the incident name/hyperlink will open the incident in SpiraTeam in a new window.
+Each incident is displayed with its:
+
+- incident ID
+- name
+- status
+- owner
+- last update date. 
+
+Hovering over the incident name will give a tooltip of the incident description. Clicking on the incident name/hyperlink will open the incident in SpiraPlan in a new window.
 
 This allows support agents to view the status of the incidents use it to determine when the ticket can be resolved because the underlying product issue has been resolved.
 
-To log a new incident in SpiraTeam based on the current help desk ticket, click on downward facing arrow on the right hand side of the ticket header (the "more actions" button).
+To log a new incident in SpiraPlan based on the current help desk ticket, click on downward facing arrow on the right hand side of the ticket header (the "more actions" button).
 
 ![](img/Help_Desk_70.png)
 
 ![](img/Help_Desk_75.png)
 
-To "Add New Incident" make sure a SpiraTeam project is selected from the dropdown list (if the name of the product for the ticket matches the name of any Spirateam project, that project will be automatically selected for you):
+To "Add New Incident" make sure a SpiraPlan project is selected from the dropdown list (if the name of the product for the ticket matches the name of any SpiraPlan project, that project will be automatically selected for you):
 
 ![](img/Help_Desk_76.png)
 
-This dialog lets you add a new incident to the linked instance of SpiraTeam. The system will prepopulate the description of the incident with the ticket description. You can edit this text or clear it completely and enter in custom content.
+This dialog lets you add a new incident to the linked instance of SpiraPlan. The system will prepopulate the description of the incident with the ticket description. You can edit this text or clear it completely and enter in custom content.
 
-You then need to enter an incident name, and choose values for other fields based on what fields are required (this is set inside SpiraTeam on a project by project basis). Once you are satisfied, click "Add" to add the incident to SpiraTeam. Once the incident has been added, it will appear in the KronoDesk journal.
+You then need to enter an incident name, and choose values for other fields based on what fields are required (this is set inside SpiraPlan on a project by project basis). Once you are satisfied, click "Add" to add the incident to SpiraPlan. Once the incident has been added, it will appear in the KronoDesk journal.
 
-*Note: You need to make sure that the SpiraTeam user that you have associated with your KronoDesk profile has permissions to create new incidents in that project in SpiraTeam.*
+*Note: You need to make sure that the SpiraPlan user that you have associated with your KronoDesk profile has permissions to create new incidents in that project in SpiraPlan.*
 
 
 ### History
