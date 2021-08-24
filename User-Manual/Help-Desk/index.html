@@ -876,6 +876,108 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      About
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="About" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../About/introduction-to-kronodesk/" title="Introduction to KronoDesk" class="md-nav__link">
+      Introduction to KronoDesk
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../About/release-notes-v4/" title="Release Notes for v4" class="md-nav__link">
+      Release Notes for v4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../About/release-notes-v3/" title="Release Notes for v3" class="md-nav__link">
+      Release Notes for v3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../About/release-notes-v2/" title="Release Notes for v2" class="md-nav__link">
+      Release Notes for v2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../About/release-notes-v1/" title="Release Notes for v1" class="md-nav__link">
+      Release Notes for v1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../About/legal-notices/" title="Legal Notices" class="md-nav__link">
+      Legal Notices
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -1093,7 +1195,7 @@
 <li><strong>Assign Tickets to Me</strong> -- If you select ticket(s) in the main grid and then click this option, it will assign the selected tickets to your user.</li>
 <li><strong>Assign Tickets to User</strong> -- If you select ticket(s) in the main grid and then click this option, it will allow you to assign the selected tickets to a specific customer agent.</li>
 <li><strong>Unassign Tickets</strong> -- If you select ticket(s) in the main grid and then click this option, it will return the ticket to the unassigned list.</li>
-<li><strong>Merge Tickets --</strong> If you select two or more tickets in the grid (using SHIFT+click or CTRL+click) then click merge, the system will combine them into a single ticket for you.</li>
+<li><strong>Merge Tickets --</strong> If you select two or more tickets in the grid (using SHIFT+click or CTRL+click) then click merge, the system will prompt you to select a primary ticket that the others will be merged into. It then combines the selected into that primary ticket, with each message added as a separate note.</li>
 <li><strong>Delete Tickets</strong> -- If you select ticket(s) in the main grid, then click this option, it will permanently delete the selected tickets. Typically this is only used for tickets generated from spam emails.</li>
 </ul>
 <h3 id="filtering-and-sorting">Filtering and Sorting<a class="headerlink" href="#filtering-and-sorting" title="Permanent link">&para;</a></h3>
@@ -1193,7 +1295,7 @@
 <p><strong>Attachments</strong> -- any file added to the ticket</p>
 </li>
 <li>
-<p><strong>Incidents</strong> -- If you have the integration with SpiraTeam®
+<p><strong>Incidents</strong> -- If you have the integration with SpiraPlan®
 enabled, you will see any incidents (defects, bugs, change requests, etc.) related to the current ticket.</p>
 </li>
 <li>
@@ -1263,20 +1365,27 @@ enabled, you will see any incidents (defects, bugs, change requests, etc.) relat
 <p>To attach a new document to the ticket, you simply drag them onto the attachment upload control or click on the upload button and then browse to find the file on your local filesystem.</p>
 <p><em>Note: The system uses file extensions to identity the type of file, so if your local operating system doesn't use file extensions, you may want to rename the file before uploading (e.g. changing MyDocument to MyDocument.pdf to identity it as an Acrobat document).</em></p>
 <h3 id="incidents">Incidents<a class="headerlink" href="#incidents" title="Permanent link">&para;</a></h3>
-<p>SpiraTeam® incidents linked to the current help desk ticket are shown in the journal (as long as the current user has permission to view them). If you see the following message, it means that your user profile in KronoDesk has not been linked to an equivalent SpiraTeam user profile. To fix the issue, click on the "user profile" link and enter your SpiraTeam RSS Token into your KronoDesk user profile. This is described in more detail in <a href="../User-Profile/#edit-profile">Edit Profile</a></p>
-<p><img alt="" src="../img/Help_Desk_73.png" /></p>
-<p>Once your KronoDesk user is linked to a corresponding SpiraTeam user, you will see a list of SpiraTeam incidents that were generated from the current ticket in the journal, organized with other journal items based on the date the incident was created:</p>
+<p>SpiraPlan® incidents linked to the current help desk ticket are shown in the journal (as long as the current user has permission to view them). To check or change your connection to Spira click on the "user profile" link and enter your SpiraPlan username and RSS Token into your KronoDesk user profile. This is described in more detail in <a href="../User-Profile/#edit-profile">Edit Profile</a>.</p>
+<p>Once your KronoDesk user is linked to a corresponding SpiraPlan user, you will see a list of SpiraPlan incidents that were generated from the current ticket in the journal, organized with other journal items based on the date the incident was created:</p>
 <p><img alt="" src="../img/Help_Desk_74.png" /></p>
-<p>Each incident is displayed together with its incident ID, name, status, owner, and last update date. Hovering over the incident name will give a tooltip of the incident description. Clicking on the incident name/hyperlink will open the incident in SpiraTeam in a new window.</p>
+<p>Each incident is displayed with its:</p>
+<ul>
+<li>incident ID</li>
+<li>name</li>
+<li>status</li>
+<li>owner</li>
+<li>last update date. </li>
+</ul>
+<p>Hovering over the incident name will give a tooltip of the incident description. Clicking on the incident name/hyperlink will open the incident in SpiraPlan in a new window.</p>
 <p>This allows support agents to view the status of the incidents use it to determine when the ticket can be resolved because the underlying product issue has been resolved.</p>
-<p>To log a new incident in SpiraTeam based on the current help desk ticket, click on downward facing arrow on the right hand side of the ticket header (the "more actions" button).</p>
+<p>To log a new incident in SpiraPlan based on the current help desk ticket, click on downward facing arrow on the right hand side of the ticket header (the "more actions" button).</p>
 <p><img alt="" src="../img/Help_Desk_70.png" /></p>
 <p><img alt="" src="../img/Help_Desk_75.png" /></p>
-<p>To "Add New Incident" make sure a SpiraTeam project is selected from the dropdown list (if the name of the product for the ticket matches the name of any Spirateam project, that project will be automatically selected for you):</p>
+<p>To "Add New Incident" make sure a SpiraPlan project is selected from the dropdown list (if the name of the product for the ticket matches the name of any SpiraPlan project, that project will be automatically selected for you):</p>
 <p><img alt="" src="../img/Help_Desk_76.png" /></p>
-<p>This dialog lets you add a new incident to the linked instance of SpiraTeam. The system will prepopulate the description of the incident with the ticket description. You can edit this text or clear it completely and enter in custom content.</p>
-<p>You then need to enter an incident name, and choose values for other fields based on what fields are required (this is set inside SpiraTeam on a project by project basis). Once you are satisfied, click "Add" to add the incident to SpiraTeam. Once the incident has been added, it will appear in the KronoDesk journal.</p>
-<p><em>Note: You need to make sure that the SpiraTeam user that you have associated with your KronoDesk profile has permissions to create new incidents in that project in SpiraTeam.</em></p>
+<p>This dialog lets you add a new incident to the linked instance of SpiraPlan. The system will prepopulate the description of the incident with the ticket description. You can edit this text or clear it completely and enter in custom content.</p>
+<p>You then need to enter an incident name, and choose values for other fields based on what fields are required (this is set inside SpiraPlan on a project by project basis). Once you are satisfied, click "Add" to add the incident to SpiraPlan. Once the incident has been added, it will appear in the KronoDesk journal.</p>
+<p><em>Note: You need to make sure that the SpiraPlan user that you have associated with your KronoDesk profile has permissions to create new incidents in that project in SpiraPlan.</em></p>
 <h3 id="history">History<a class="headerlink" href="#history" title="Permanent link">&para;</a></h3>
 <p>The journal displays the list of changes that have been performed on the help desk ticket artifact since its creation. An example ticket change history is shown below:</p>
 <p><img alt="" src="../img/Help_Desk_77.png" /></p>
