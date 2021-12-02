@@ -5,7 +5,6 @@ copyright: © Copyright 2006-2020 Inflectra Corporation, All Rights Reserved | e
 repo_name: Inflectra
 repo_url: https://www.inflectra.com
 site_url: https://kronodoc.inflectra.com/
-google_analytics: ['UA-1302007-6', 'https://kronodoc.inflectra.com/']
 
 # EXTENSIONS USED
 markdown_extensions:
@@ -51,6 +50,7 @@ theme:
     code: IBM Plex Mono
   favicon: images/favicon.ico
   logo: images/logo.svg
+  custom_dir: overrides
 
 extra:
   social:
@@ -60,6 +60,9 @@ extra:
       link: https://twitter.com/inflectra
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/inflectra-corporation
+  analytics:
+    provider: custom
+    property: see the custom.html partial
 
 
 # NAVIGATION MENU
