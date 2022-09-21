@@ -1,7 +1,8 @@
+## Inflectra
 # KronoDesk Documentation
 Here you will find the documentation for KronoDesk.
 
-#  Introduction
+##  Introduction
 KronoDesk® is an integrated customer support system that includes help desk ticketing, customer support forums and an online knowledge base in a single user interface.
 KronoDesk® includes a powerful and flexible help desk ticketing system that can be quickly and easily tailored to meet your support needs. With support for custom fields and workflows you can create different support processes for your different products.
 KronoDesk® provides a knowledge base and online support forums, making your customers more self-sufficient with routine issues so that your support personnel can focus their time on the critical issues and complex enquiries.
