@@ -25,6 +25,15 @@ The following display options are available to support agents:
 - **All Closed Tickets** - This displays a list of all the closed tickets regardless of who opened them or who they are assigned to.
 - **All Tickets** - This displays a list of all the tickets regardless of their status, who opened them or who they are assigned to.
 
+If you are using [support agent groups](../Administration-Guide/Users/#manage-employee-groups), you will also see the following two additional options:
+
+- **Group Open Tickets** - This displays a list of all the open tickets that have been assigned to a specific employee group.
+- **Group Closed Tickets** - This displays a list of all closed tickets that have been assigned to a specific employee group.
+
+When you choose one of the 'group' views, there is a dropdown list that is displayed on the top of the page that lets you select which group to view tickets for:
+
+![](img/Help_Desk_Group-Selector.png)
+
 In addition, there is an Operations pane that is displayed for support agents and lets you perform the following tasks:
 
 - **Assign Tickets to Me** -- If you select ticket(s) in the main grid and then click this option, it will assign the selected tickets to your user.
