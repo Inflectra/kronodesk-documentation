@@ -19,10 +19,10 @@ KronoDesk<sup>®</sup> system are:
 | **Server Requirements** | |
 | **Processor:**                    | Intel® or AMD® x86 or x64 compatible processor              |
 | **Memory:**                       | 8 GB recommended                  |
-| **Database:**                     | Microsoft SQL Server 2017 <br> Microsoft SQL Server 2016 <br> Microsoft SQL Server 2014 <br> Microsoft SQL Server 2012 <br> Microsoft SQL Server 2008 R2 <br> SQL Server Express is supported, <br> but not recommended for <br> production due to limitations.    |
-| **Web Server:**                   | Internet Information Services  (IIS) 7.0 or higher <br> .NET 4.5.2 Framework or higher    |
+| **Database:**                     | Microsoft SQL Server 2025 <br> Microsoft SQL Server 2022 <br> Microsoft SQL Server 2019 <br> Microsoft SQL Server 2016 <br> SQL Server Express is supported, <br> but not recommended for <br> production due to limitations.    |
+| **Web Server:**                   | Internet Information Services  (IIS) 7.0 or higher <br> .NET 4.7.2 Framework or higher    |
 | **Client Requirements**           |                                   |
-| **Web Browser:**                  | Mozilla Firefox <br> Google Chrome (Desktop and Android) <br> Apple Safari (Desktop and iOS) <br> Microsoft Edge <br> Opera <br> Internet Explorer 11.0 (not recommended)                      |
+| **Web Browser:**                  | Mozilla Firefox <br> Google Chrome (Desktop and Android) <br> Apple Safari (Desktop and iOS) <br> Microsoft Edge <br> Opera                      |
 
 \*Note that KronoDesk<sup>®</sup> can be loaded onto either Windows Server or
 workstation editions, provided that the IIS web-server is installed and
@@ -47,21 +47,18 @@ following order:
 
 - Install the .NET Framework v4.5.2
 
-- Install SQL Server 2008R2, 2012, 2014, 2016, or 2017.
-
-- Install the latest version of Internet Explorer that your server OS
-allows
+- Install SQL Server 2016, 2019, 2022, or 2025.
 
 - Ensure that IIS is installed
 
-- Ensure that ASP.NET 4.5.2 is enabled
+- Ensure that ASP.NET 4.7.2 is enabled
 
-## Install the .NET Framework v4.5.2.
+## Install the .NET Framework v4.7.2.
 
-On Windows 10, 8 and Windows Server 2012+ installations, Microsoft .NET
-Framework v4.5.2 is usually installed as part of the factory
+On Windows 10, 11 and Windows Server 2016+ installations, Microsoft .NET
+Framework v4.7.2 is usually installed as part of the factory
 configuration, whereas on earlier operating systems, you might need to
-manually add the .NET 4.5.2 framework.
+manually add the .NET 4.7.2 framework.
 
 To see which version of the Microsoft .NET framework installed, open up
 Windows Explorer® and navigate to
@@ -76,13 +73,13 @@ have installed:
 
 To install the .NET Framework, please go to the Microsoft website and
 install the latest version of the .NET Framework available for your
-operating system. At the time of writing it was .NET 4.6.
+operating system. At the time of writing it was .NET 4.8.1.
 
-## Install SQL Server 2008R2+
+## Install SQL Server 2016+
 
 Install the appropriate version of the database software, following the
 instructions provided with the installation. Since KronoDesk is an
-enterprise-level software, we recommend SQL Server 2008 R2+, Web,
+enterprise-level software, we recommend SQL Server 2016+, Web,
 Standard, or Enterprise editions. Express editions have limitations on
 Ram and CPU usage, and can cause significant performance issues. We also
 recommend enabling FullText indexing, as KronoDesk will take advantage
@@ -100,7 +97,7 @@ browsers, some pages may not appear correctly.
 On Widows Server installations, you may have to install the IIS Role if
 it is not already active.
 
-On **Windows Server 2012+**, you need to click on Server Manager, then
+On **Windows Server 2016+**, you need to click on Server Manager, then
 under the "Roles" heading, choose the option to "Add Role" followed by
 selecting the new role "Web Server / IIS". Then click "Next" to bring up
 the role configuration screen:
@@ -130,13 +127,9 @@ Make sure that the following features are enabled:
 
         - Application Development
 
-            - .NET Extensibility 3.5
+            - .NET Extensibility 4.7.2
 
-            - .NET Extensibility 4.5
-
-            - ASP.NET 3.5
-
-            - ASP.NET 4.5
+            - ASP.NET 4.7.2
 
             - ISAPI Extensions
 
@@ -148,11 +141,11 @@ Make sure that the following features are enabled:
 
             - IIS Management Service
 
-- .NET Framework 4.5 Features
+- .NET Framework 4.7.2 Features
 
-    - .NET Framework 4.5
+    - .NET Framework 4.7.2
 
-    - ASP.NET 4.5
+    - ASP.NET 4.7.2
 
     - WCF Services
 

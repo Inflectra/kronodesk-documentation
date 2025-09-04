@@ -93,6 +93,8 @@ statuses.
 All statuses must have a display name, which is viewed by the user
 editing or viewing the ticket. The other fields are:
 
+- **Highlight Color** - you can optionally add a background color to the statuses when displayed in the ticket grid. This can be useful to highlight certain statuses that need urgent action.
+
 -   **Closed for Internal?** - Whether this status is considered as
 inactive for internal users (employees, support agents, etc.). For
 example the sample status 'Waiting on Customer' would be considered
@@ -154,6 +156,8 @@ status that the ticket will be switched to.
 this number of days old, the status will be automatically
 closed.
 
+- **Deleted Ticket Auto-Purge Age** - this setting determines how long deleted tickets remain in the system before they are automatically purged. To retain all tickets and prevent auto-purging, enter `0` as the value.
+
 ## Ticket Types
 
 The Ticket Type page defines values allowed for the standard Type field
@@ -163,12 +167,17 @@ user sees when they view or edit a type.
 ![](img/Help_Desk_Settings_52.png)
 
 
+All types must have a display name, which is viewed by the user
+editing or viewing the ticket. The other fields are:
 
+- **Highlight Color** - you can optionally add a background color to the types when displayed in the ticket grid. This can be useful to highlight certain types that typically need more attention.
 
-To add a new type, click the Add New Type link, and fill out the new
+To add a new type, click the `Add New Type` link, and fill out the new
 empty row.
 
-To remove a type, click the Remove button to the right of the defined
+KronoDesk allows you to define **SLAs** with each ticket type. To view/edit the SLA, click on the `View/Edit SLAs` link. You can learn more about SLAs by refering to the [Managing SLAs section](#ticket-slas).
+
+To remove a type, click the `Remove` button to the right of the defined
 type. Note that any tickets assigned to a type that is removed will
 retain their type, until the next time a user tries to edit the ticket.
 
@@ -210,6 +219,26 @@ To remove a resolution, click the Remove button to the right of the
 resolution. Note that any tickets assigned to a resolution that is
 removed will retain their value, until the next time a user tries to
 edit the ticket.
+
+## Ticket SLAs
+
+TBD
+
+## Working Hours
+
+KronoDesk lets you define the standard working hours, which are used when measuring times against the defined [SLAs](#ticket-slas).
+
+![](img/Help_Desk_Settings_Working_Hours1.png)
+
+You specify the start and end time for each day of the week. If you leave the times blank for that day, it's considered a non working day (e.g. Saturday and Sunday would be left blank if weekends are considered non-working days).
+
+*Note: the working hours are based on the timezone of the instance of KronoDesk, not the individual timezone of specific users or organizations.*
+
+To account for public holidays and other special non-working days, there is an additional section below:
+
+![](img/Help_Desk_Settings_Working_Hours2.png)
+
+You can add any special one-off days in this section, which are also considered non-working.
 
 ## Spira Integration
 
