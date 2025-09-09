@@ -233,6 +233,19 @@ The two SLAs you can define per priority are:
 
 *Note: if you leave either reaction or resolution time blank for a specific priority, KronoDesk will assume there is no defined SLA.**
 
+### Viewing Ticket SLAs
+
+When you display the list of tickets, you can choose to show the special **ticket SLA** columns:
+
+![](img/Help_Desk_Settings_SLAs_2.png)
+
+The following columns are available:
+
+- **Reaction Time**: This is the amount of working time spent so far on the specific ticket prior to it being assigned or reacted to. If the time spent has exceed the SLA, the time will shown with a red background.
+- **Reaction Time Remaining**: This is the amount of time remaining on this ticket before the reaction time SLA is breached. If breached, the time will become negative and the background will be shaded red.
+- **Resolution Time**:  This is the amount of working time spent so far on the specific ticket prior to it being resolved. If the time spent has exceed the SLA, the time will shown with a red background. 
+- **Resolution Time Remaining**: This is the amount of time remaining on this ticket before the resolution time SLA is breached. If breached, the time will become negative and the background will be shaded red.
+
 ## Working Hours
 
 KronoDesk lets you define the standard working hours, which are used when measuring times against the defined [SLAs](#ticket-slas).
