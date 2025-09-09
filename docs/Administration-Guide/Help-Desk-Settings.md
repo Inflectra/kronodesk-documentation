@@ -222,7 +222,16 @@ edit the ticket.
 
 ## Ticket SLAs
 
-TBD
+This screen lets you define the different SLAs for the various ticket priorities for the current ticket type. KronoDesk lets you have a specific SLA for each combination of **ticket type** and **ticket priority**.
+
+![](img/Help_Desk_Settings_SLAs_1.png)
+
+The two SLAs you can define per priority are:
+
+- **Reaction Time**: This is the maximum allowed time from when a ticket was first logged by the customer, to when either the ticket was assigned or an initial holding response was given to the customer. The SLA excludes any time outside of the defined working hours (see next section).
+- **Resolution Time**: This is the maximum allowed time from when a ticket was first logged by the customer, to when the ticket is resolved. It excludes any time when the ticket was waiting on the customer for a response.
+
+*Note: if you leave either reaction or resolution time blank for a specific priority, KronoDesk will assume there is no defined SLA.**
 
 ## Working Hours
 
